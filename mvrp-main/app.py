@@ -18,8 +18,10 @@ from collections import defaultdict
 from operator import itemgetter
 from pathlib import Path
 from typing import NamedTuple, Union
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
+
+
 import pandas as pd
 import io
 import os
@@ -167,7 +169,7 @@ def toggle_left_column(collapse_trigger: int, to_collapse_class: str) -> str:
     return to_collapse_class + " collapsed" if to_collapse_class else "collapsed"
 
 
-def generate_initial_map(file_path: str, num_clients: int) -> folium.Map:
+def generate_initial_map(file_path: str,bb_distance: int, num_clients: int) -> folium.Map:
     """Generates the initial map.
 
     Args:
@@ -176,25 +178,26 @@ def generate_initial_map(file_path: str, num_clients: int) -> folium.Map:
     Returns:
         folium.Map: Initial map shown on the map tab.
     """
-    map_network, depot_id, client_subset, map_bounds = generate_mapping_information(file_path,num_clients)
+    map_network, depot_id, client_subset, map_bounds = generate_mapping_information(file_path,bb_distance,num_clients)
     initial_map = show_locations_on_initial_map(map_network, depot_id, client_subset, map_bounds)
     return initial_map
-
 
 @app.callback(
     Output("solution-map", "srcDoc", allow_duplicate=True),
     inputs=[
-        Input("file-selector", "value"),  # File selected by the user
+        Input("file-selector", "value"),
         Input("num-clients-select", "value"),
+        Input("distance_select", "value"),
         Input("run-button", "n_clicks"),
     ],
 )
-def arender_initial_map(selected_file: str, num_clients: int, _) -> str:
+def render_initial_map(selected_file: str, num_clients: int, bb_distance: int, _) -> str:
     """Generates and saves an HTML version of the initial map based on selected file.
 
     Args:
         selected_file: Filename selected by the user from assets/CSVs.
-        num_clients: Number of locations.
+        num_clients: Number of client locations.
+        bb_distance: Bounding box distance around the depot.
 
     Returns:
         str: Initial map shown on the map tab as HTML.
@@ -202,13 +205,15 @@ def arender_initial_map(selected_file: str, num_clients: int, _) -> str:
     if not selected_file:
         return "<p>Please select a file to generate the map.</p>"
 
+    print("Triggered by:", ctx.triggered)  # Debugging info
+    print(f"Selected file: {selected_file}, Num clients: {num_clients}, Distance: {bb_distance}")
+
     map_path = Path("initial_map.html")
     file_path = os.path.join('assets', 'CSVs', selected_file)
 
-    # Only regenerate map if num_clients is changed or map does not exist
-    if ctx.triggered_id != "run-button" or not map_path.exists():
-        initial_map = generate_initial_map(file_path, num_clients)
-        initial_map.save(map_path)
+    # Force map regeneration when bb_distance or num_clients changes
+    initial_map = generate_initial_map(file_path, bb_distance, num_clients)
+    initial_map.save(map_path)
 
     return open(map_path, "r").read()
 
@@ -336,13 +341,13 @@ class RunOptimizationReturn(NamedTuple):
     num_locations: int
     vehicles_deployed: int
 
+
 @app.callback(
     # update map and results
     Output("solution-map", "srcDoc", allow_duplicate=True),
     Output("stored-results", "data"),
     Output("hybrid-table-label", "children"),
-    # store the solver used, whether or not to reset results tabs and the
-    # parameter hash value used to detect parameter changes
+    # store the solver used, whether or not to reset results tabs and the parameter hash value
     Output("sampler-type", "data"),
     Output("reset-results", "data"),
     Output("parameter-hash", "data"),
@@ -358,26 +363,23 @@ class RunOptimizationReturn(NamedTuple):
     background=True,
     inputs=[
         Input("run-button", "n_clicks"),
+        State("file-selector", "value"),  # File selector state for the CSV file
+        State("num-clients-select", "value"),
+        State("distance_select", "value"),
         State("vehicle-type-select", "value"),
         State("sampler-type-select", "value"),
         State("num-vehicles-select", "value"),
-        State("distance_select", "value"),
         State("solver-time-limit", "value"),
-        State("num-clients-select", "value"),
-        # input and output result table (to update it dynamically)
         State("solution-cost-table", "children"),
         State("parameter-hash", "data"),
         State("cost-comparison", "data"),
     ],
     running=[
-        # show cancel button and hide run button, and disable and animate results tab
         (Output("cancel-button", "className"), "", "display-none"),
         (Output("run-button", "className"), "display-none", ""),
         (Output("results-tab", "disabled"), True, False),
         (Output("results-tab", "label"), "Loading...", "Results"),
-        # switch to map tab while running
         (Output("tabs", "value"), "map-tab", "map-tab"),
-        # block certain callbacks from running until this is done
         (Output("run-in-progress", "data"), True, False),
     ],
     cancel=[Input("cancel-button", "n_clicks")],
@@ -385,137 +387,109 @@ class RunOptimizationReturn(NamedTuple):
 )
 def run_optimization(
     run_click: int,
+    selected_file: str,
+    num_clients: int,
+    bb_distance: int,
     vehicle_type: Union[VehicleType, int],
     sampler_type: Union[SamplerType, int],
     num_vehicles: int,
     time_limit: float,
-    num_clients: int,
     cost_table: list,
     previous_parameter_hash: str,
     cost_comparison: dict,
 ) -> RunOptimizationReturn:
-    """Run the optimization and update map and results tables.
-
-    This is the main optimization function which is called when the Run optimization button is
-    clicked. It used all inputs from the drop-down lists, sliders and text entries and runs the
-    optimization, updates the run/cancel buttons, animates (and deactivates) the results tab,
-    moves focus to the map tab and updates all relevant HTML entries.
-
-    Args:
-        run_click: The (total) number of times the run button has been clicked.
-        vehicle_type: Either Trucks (``0`` or ``VehicleType.TRUCKS``) or
-            Delivery Drones (``1`` or ``VehicleType.DELIVERY_DRONES``).
-        sampler_type: Either Quantum Hybrid (DQM) (``0`` or ``SamplerType.DQM``),
-            Quantum Hybrid (NL) (``1`` or ``SamplerType.NL``), or Classical (K-Means)
-            (``2`` or ``SamplerType.KMEANS``).
-        num_vehicles: The number of vehicles.
-        time_limit: The solver time limit.
-        num_clients: The number of locations.
-        cost_table: The html 'Solution cost' table. Used to update it dynamically.
-        previous_parameter_hash: Previous hash string to detect changed parameters
-        cost_comparison: Dictionary with solver keys and run cost values.
-
-    Returns:
-        A NamedTuple (RunOptimizationReturn) containing all outputs to be used when updating the HTML
-        template (in ``dash_html.py``). These are:
-
-            solution-map: Updates the 'srcDoc' entry for the 'solution-map' Iframe in the map tab.
-                This is the map (initial and solution map).
-            stored-results: Stores the Solution cost table in the results tab.
-            hybrid-table-label: Label for the hybrid results table (either NL or DQM).
-            sampler-type: The sampler used (``"quantum"`` or ``"classical"``).
-            reset-results: Whether or not to reset the results tables before applying the new one.
-            parameter-hash: Hash string to detect changed parameters.
-            performance-improvement-quantum: Updates quantum performance improvement message.
-            cost-comparison: Keeps track of the difference between classical and hybrid run costs.
-            problem-size: Updates the problem-size entry in the problem details table.
-            search-space: Updates the search-space entry in the problem details table.
-            wall-clock-time-classical: Updates the wall clock time in the Classical table header.
-            wall-clock-time-quantum: Updates the wall clock time in the Hybrid Quantum table header.
-            num-locations: Updates the number of locations in the problem details table.
-            vehicles-deployed: Updates the vehicles-deployed entry in the problem details table.
-    """
+    """Run optimization and update maps and result tables."""
     if run_click == 0 or ctx.triggered_id != "run-button":
         raise PreventUpdate
 
-    if isinstance(vehicle_type, int):
-        vehicle_type = VehicleType(vehicle_type)
+    # Ensure proper enums
+    vehicle_type = VehicleType(vehicle_type) if isinstance(vehicle_type, int) else vehicle_type
+    sampler_type = SamplerType(sampler_type) if isinstance(sampler_type, int) else sampler_type
 
-    if isinstance(sampler_type, int):
-        sampler_type = SamplerType(sampler_type)
+    # Construct file path for selected CSV
+    file_path = os.path.join("assets", "CSVs", selected_file)
 
-    if ctx.triggered_id == "run-button":
-        map_network, depot_id, client_subset, map_bounds = generate_mapping_information('assets/CSVs/ananglascontainer.csv' ,num_clients)
-        initial_map = show_locations_on_initial_map(
-            map_network, depot_id, client_subset, map_bounds
-        )
+    # Generate network and bounding box for client data
+    map_network, depot_id, client_subset, map_bounds = generate_mapping_information(
+        file_path, bb_distance, num_clients
+    )
 
-        routing_problem_parameters = RoutingProblemParameters(
-            map_network=map_network,
-            depot_id=depot_id,
-            client_subset=client_subset,
-            num_clients=num_clients,
-            num_vehicles=num_vehicles,
-            vehicle_type=vehicle_type,
-            sampler_type=sampler_type,
-            time_limit=time_limit,
-        )
-        routing_problem_solver = Solver(routing_problem_parameters)
+    # Display map before running optimization
+    initial_map = show_locations_on_initial_map(map_network, depot_id, client_subset, map_bounds)
 
-        # run problem and generate solution (stored in Solver)
-        wall_clock_time = routing_problem_solver.generate()
+    # Define routing problem parameters
+    routing_problem_parameters = RoutingProblemParameters(
+        map_network=map_network,
+        depot_id=depot_id,
+        client_subset=client_subset,
+        num_clients=num_clients,
+        num_vehicles=num_vehicles,
+        bb_distance=bb_distance,
+        vehicle_type=vehicle_type,
+        sampler_type=sampler_type,
+        time_limit=time_limit,
+    )
 
-        solution_map, solution_cost = plot_solution_routes_on_map(
-            initial_map,
-            routing_problem_parameters,
-            routing_problem_solver,
-        )
+    # Solver instance
+    routing_problem_solver = Solver(routing_problem_parameters)
+    wall_clock_time = routing_problem_solver.generate()  # Run optimization
 
-        problem_size = num_vehicles * num_clients
-        search_space = f"{num_vehicles**num_clients:.2e}"
+    # Generate solution map and cost information
+    solution_map, solution_cost = plot_solution_routes_on_map(
+        initial_map, routing_problem_parameters, routing_problem_solver
+    )
 
-        solution_cost = dict(sorted(solution_cost.items()))
-        total_cost = defaultdict(int)
-        for cost_info_dict in solution_cost.values():
-            for key, value in cost_info_dict.items():
-                total_cost[key] += value
+    # Problem size and complexity metrics
+    problem_size = num_vehicles * num_clients
+    search_space = f"{num_vehicles**num_clients:.2e}"
 
-        cost_table = create_table(solution_cost, list(total_cost.values()))
-        solution_map.save("solution_map.html")
+    # Summarize and update solution costs
+    solution_cost = dict(sorted(solution_cost.items()))
+    total_cost = defaultdict(int)
+    for cost_info_dict in solution_cost.values():
+        for key, value in cost_info_dict.items():
+            total_cost[key] += value
 
-        parameter_hash = _get_parameter_hash(**callback_context.states)
-        reset_results = parameter_hash != previous_parameter_hash
+    # Update table data dynamically
+    cost_table = create_table(solution_cost, list(total_cost.values()))
+    solution_map.save("solution_map.html")  # Save updated map
 
-        cost_comparison, performance_improvement_quantum = calculate_cost_comparison(
-            cost_comparison, total_cost["optimized_cost"], sampler_type, reset_results
-        )
+    # Parameter hash and results reset
+    parameter_hash = _get_parameter_hash(**callback_context.states)
+    reset_results = parameter_hash != previous_parameter_hash
 
-        wall_clock_time_kmeans, wall_clock_time_quantum = get_updated_wall_clock_times(
-            wall_clock_time, sampler_type, reset_results
-        )
+    # Calculate and update cost comparisons
+    cost_comparison, performance_improvement_quantum = calculate_cost_comparison(
+        cost_comparison, total_cost["optimized_cost"], sampler_type, reset_results
+    )
 
-        hybrid_table_label = (
-            dash.no_update if sampler_type is SamplerType.KMEANS else SAMPLER_TYPES[sampler_type]
-        )
+    # Wall clock times for solvers
+    wall_clock_time_kmeans, wall_clock_time_quantum = get_updated_wall_clock_times(
+        wall_clock_time, sampler_type, reset_results
+    )
 
-        return RunOptimizationReturn(
-            solution_map = open("solution_map.html", "r").read(),
-            cost_table = cost_table,
-            hybrid_table_label = hybrid_table_label,
-            sampler_type = "classical" if sampler_type is SamplerType.KMEANS else "quantum",
-            reset_results = reset_results,
-            parameter_hash = str(parameter_hash),
-            performance_improvement_quantum = performance_improvement_quantum,
-            cost_comparison = cost_comparison,
-            problem_size = problem_size,
-            search_space = search_space,
-            wall_clock_time_classical = wall_clock_time_kmeans,
-            wall_clock_time_quantum = wall_clock_time_quantum,
-            num_locations = num_clients,
-            vehicles_deployed = num_vehicles,
-        )
+    # Hybrid label determination
+    hybrid_table_label = (
+        dash.no_update if sampler_type is SamplerType.KMEANS else SAMPLER_TYPES[sampler_type]
+    )
 
-    raise PreventUpdate
+    # Return structured data for updates
+    return RunOptimizationReturn(
+        solution_map=open("solution_map.html", "r").read(),
+        cost_table=cost_table,
+        hybrid_table_label=hybrid_table_label,
+        sampler_type="classical" if sampler_type is SamplerType.KMEANS else "quantum",
+        reset_results=reset_results,
+        parameter_hash=str(parameter_hash),
+        performance_improvement_quantum=performance_improvement_quantum,
+        cost_comparison=cost_comparison,
+        problem_size=problem_size,
+        search_space=search_space,
+        wall_clock_time_classical=wall_clock_time_kmeans,
+        wall_clock_time_quantum=wall_clock_time_quantum,
+        num_locations=num_clients,
+        vehicles_deployed=num_vehicles,
+    )
 
 
 def _get_parameter_hash(**states) -> str:
@@ -525,7 +499,7 @@ def _get_parameter_hash(**states) -> str:
     items = [
         "vehicle-type-select.value",
         "num-vehicles-select.value",
-        "num-vehicles-select.value",
+        "num-clients-select.value",
         "distance_select.value",
         "solver-time-limit.value",
     ]

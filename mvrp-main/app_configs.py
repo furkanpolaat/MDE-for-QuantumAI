@@ -88,5 +88,5 @@ BOUNDING_BOX_DISTANCE = {
     "min": 100,
     "max": 2000,
     "step": 10,
-    "value": 500,
+    "value": 1000,
 }

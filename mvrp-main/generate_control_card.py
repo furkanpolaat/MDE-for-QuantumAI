@@ -188,7 +188,6 @@ def generate_control_card() -> html.Div:
                         "num-vehicles-select",
                         NUM_VEHICLES,
                     ),
-
                     slider(
                         LOCATIONS_LABEL,
                         "num-clients-select",

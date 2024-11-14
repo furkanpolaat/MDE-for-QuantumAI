@@ -38,8 +38,8 @@ depot_icon_path = Path(__file__).parent / "assets/depot_location.png"
 depot_icon = folium.CustomIcon(str(depot_icon_path), icon_size=(30, 48))
 
 # Define depot coordinates as a constant
-DEPOT_LAT = 51.20451936274899
-DEPOT_LON = 4.404572523753899
+DEPOT_LAT = 51.15867961496224
+DEPOT_LON = 4.3920503715607175
 
 def _get_coordinates(node_index_map: dict) -> NDArray:
     """Returns an array of coordinates for all nodes."""
@@ -51,32 +51,30 @@ def _get_coordinates(node_index_map: dict) -> NDArray:
     return coordinates
 
 
-
-def generate_mapping_information(file_path: str, num_clients: int) -> tuple[nx.MultiDiGraph, int, list, list]:
-    """Return `nx.MultiDiGraph with client demand, depot id in graph, client ids in graph.
+def agenerate_mapping_information(file_path: str, bb_distance: int, num_clients: int) -> tuple[nx.MultiDiGraph, int, list, list]:
+    """
+    Generates a map network with a bounding box based on user-defined distance.
 
     Args:
-        num_clients: Number of locations to be visited in total.
+        file_path (str): Path to the CSV file containing client locations.
+        bb_distance (int): Bounding box distance (meters) around the depot.
+        num_clients (int): Number of locations to be visited.
 
     Returns:
-        map_network: `nx.MultiDiGraph where nodes and edges represent locations and routes.
-        depot_id: Node ID of the depot location.
-        client_subset: List of client IDs in the map's graph.
-        map_bounds: List of lower and upper bound locations for map
+        tuple: Contains map network, depot ID, client subset, and map bounds.
     """
     # Load glass container locations from CSV
-
     client_csv_file_df = pd.read_csv(file_path)
 
-    # Initialize the transformer (from EPSG:3857 to EPSG:4326 for lat/long)
+    # Initialize transformer (from EPSG:3857 to EPSG:4326 for lat/long)
     transformer = pyproj.Transformer.from_crs("EPSG:3857", "EPSG:4326", always_xy=True)
 
-    # Convert the X and Y coordinates to latitude and longitude
+    # Function to convert coordinates
     def convert_coordinates(x, y):
         lon, lat = transformer.transform(x, y)
         return lat, lon
 
-    # Create new Latitude and Longitude columns
+    # Add Latitude and Longitude columns
     client_csv_file_df['Latitude'] = None
     client_csv_file_df['Longitude'] = None
 
@@ -87,66 +85,70 @@ def generate_mapping_information(file_path: str, num_clients: int) -> tuple[nx.M
         client_csv_file_df.at[i, 'Latitude'] = lat
         client_csv_file_df.at[i, 'Longitude'] = lon
 
-    # Use the transformed coordinates for glass client_csv_file
+    # Use transformed coordinates for client data
     transformed_client_csv_file = client_csv_file_df[['Latitude', 'Longitude']]
 
-    # Generate graph centered on the depot location using OSMnx
-    G = ox.graph_from_point((DEPOT_LAT, DEPOT_LON), dist=DISTANCE, network_type="drive", truncate_by_edge=True)
+    # Generate the graph based on bounding box distance
+    G = ox.graph_from_point(
+        (DEPOT_LAT, DEPOT_LON),
+        dist=bb_distance,
+        network_type="drive",
+        truncate_by_edge=True
+    )
 
+    # Replace deprecated get_largest_component
+    map_network = ox.truncate.largest_component(G, strongly=True)
 
-
-
-
-    # Get largest component (important for road connections)
-    map_network = ox.utils_graph.get_largest_component(G, strongly=True)
-
-    # Find the nearest node to the depot in the graph
+    # Find nearest node to depot
     depot_node = ox.distance.nearest_nodes(map_network, DEPOT_LON, DEPOT_LAT)
 
-    # Select the glass client_csv_file as client locations
+    # Select clients based on transformed coordinates
     client_subset = transformed_client_csv_file.values.tolist()[:num_clients]
 
-    # Ensure that client locations have default values for all resources (water, food, etc.)
+    # Add demands and resources to nearest nodes of clients
     for lat, lon in client_subset:
         nearest_node = ox.distance.nearest_nodes(map_network, lon, lat)
         map_network.nodes[nearest_node]["demand"] = 0
 
-        # Assign default values of 1 to each resource
+        # Assign default resource values
         for i in range(len(RESOURCES)):
             map_network.nodes[nearest_node][f"resource_{i}"] = 1
             map_network.nodes[nearest_node]["demand"] += map_network.nodes[nearest_node][f"resource_{i}"]
 
-    # Get min and max coordinates to determine map bounds
+    # Calculate map bounds for visualization
     coordinates = _get_coordinates(dict(enumerate(map_network.nodes(data=True))))
     map_bounds = [coordinates.min(0).tolist(), coordinates.max(0).tolist()]
 
     return map_network, depot_node, client_subset, map_bounds
 
-def agenerate_mapping_information(file_path: str,bb_distance: int , num_clients: int) -> tuple[nx.MultiDiGraph, int, list, list]:
-    """Return `nx.MultiDiGraph with client demand, depot id in graph, client ids in graph.
+
+def generate_mapping_information(file_path: str, bb_distance: int, num_clients: int) -> tuple[
+    nx.MultiDiGraph, int, list, list]:
+    """
+    Generates a map network with a bounding box based on user-defined distance.
 
     Args:
-        num_clients: Number of locations to be visited in total.
+        file_path (str): Path to the CSV file containing client locations.
+        bb_distance (int): Bounding box distance (meters) around the depot.
+        num_clients (int): Number of locations to be visited.
 
     Returns:
-        map_network: `nx.MultiDiGraph where nodes and edges represent locations and routes.
-        depot_id: Node ID of the depot location.
-        client_subset: List of client IDs in the map's graph.
-        map_bounds: List of lower and upper bound locations for map
+        tuple: Contains map network, depot ID, client subset, and map bounds.
     """
-    # Load glass container locations from CSV
+    print(f"Generating map with bounding box distance: {bb_distance} meters")  # Debugging info
 
+    # Load glass container locations from CSV
     client_csv_file_df = pd.read_csv(file_path)
 
-    # Initialize the transformer (from EPSG:3857 to EPSG:4326 for lat/long)
+    # Initialize transformer (from EPSG:3857 to EPSG:4326 for lat/long)
     transformer = pyproj.Transformer.from_crs("EPSG:3857", "EPSG:4326", always_xy=True)
 
-    # Convert the X and Y coordinates to latitude and longitude
+    # Function to convert coordinates
     def convert_coordinates(x, y):
         lon, lat = transformer.transform(x, y)
         return lat, lon
 
-    # Create new Latitude and Longitude columns
+    # Add Latitude and Longitude columns
     client_csv_file_df['Latitude'] = None
     client_csv_file_df['Longitude'] = None
 
@@ -157,36 +159,38 @@ def agenerate_mapping_information(file_path: str,bb_distance: int , num_clients:
         client_csv_file_df.at[i, 'Latitude'] = lat
         client_csv_file_df.at[i, 'Longitude'] = lon
 
-    # Use the transformed coordinates for glass client_csv_file
+    # Use transformed coordinates for client data
     transformed_client_csv_file = client_csv_file_df[['Latitude', 'Longitude']]
 
-    # Generate graph centered on the depot location using OSMnx
-    G = ox.graph_from_point((DEPOT_LAT, DEPOT_LON), dist=DISTANCE, network_type="drive", truncate_by_edge=True)
+    # Generate the graph based on bounding box distance
+    G = ox.graph_from_point(
+        (DEPOT_LAT, DEPOT_LON),
+        dist=bb_distance,
+        network_type="drive",
+        truncate_by_edge=True
+    )
+    print(f"Graph generated with {len(G.nodes)} nodes and {len(G.edges)} edges.")  # Debugging info
 
+    # Get the largest connected component (for consistency)
+    map_network = ox.truncate.largest_component(G, strongly=True)
 
+    # Find nearest node to depot
+    depot_node = ox.distance.nearest_nodes(map_network, DEPOT_LON, DEPOT_LAT)
 
-
-
-    # Get largest component (important for road connections)
-    map_network = ox.utils_graph.get_largest_component(G, strongly=True)
-
-    # Find the nearest node to the depot in the graph
-    depot_node = ox.bb_distance.nearest_nodes(map_network, DEPOT_LON, DEPOT_LAT)
-
-    # Select the glass client_csv_file as client locations
+    # Select clients based on transformed coordinates
     client_subset = transformed_client_csv_file.values.tolist()[:num_clients]
 
-    # Ensure that client locations have default values for all resources (water, food, etc.)
+    # Add demands and resources to nearest nodes of clients
     for lat, lon in client_subset:
-        nearest_node = ox.bb_distance.nearest_nodes(map_network, lon, lat)
+        nearest_node = ox.distance.nearest_nodes(map_network, lon, lat)
         map_network.nodes[nearest_node]["demand"] = 0
 
-        # Assign default values of 1 to each resource
+        # Assign default resource values
         for i in range(len(RESOURCES)):
             map_network.nodes[nearest_node][f"resource_{i}"] = 1
             map_network.nodes[nearest_node]["demand"] += map_network.nodes[nearest_node][f"resource_{i}"]
 
-    # Get min and max coordinates to determine map bounds
+    # Calculate map bounds for visualization
     coordinates = _get_coordinates(dict(enumerate(map_network.nodes(data=True))))
     map_bounds = [coordinates.min(0).tolist(), coordinates.max(0).tolist()]
 

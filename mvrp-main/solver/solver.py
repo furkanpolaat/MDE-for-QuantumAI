@@ -43,6 +43,7 @@ class RoutingProblemParameters(NamedTuple):
     depot_id: int
     client_subset: list  # List of lat/lon pairs for clients
     num_clients: int
+    bb_distance: int
     num_vehicles: int
     vehicle_type: VehicleType
     sampler_type: SamplerType
