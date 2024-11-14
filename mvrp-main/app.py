@@ -189,7 +189,7 @@ def generate_initial_map(file_path: str, num_clients: int) -> folium.Map:
         Input("run-button", "n_clicks"),
     ],
 )
-def render_initial_map(selected_file: str, num_clients: int, _) -> str:
+def arender_initial_map(selected_file: str, num_clients: int, _) -> str:
     """Generates and saves an HTML version of the initial map based on selected file.
 
     Args:
