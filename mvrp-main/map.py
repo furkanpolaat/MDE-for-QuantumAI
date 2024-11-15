@@ -38,9 +38,8 @@ depot_icon_path = Path(__file__).parent / "assets/depot_location.png"
 depot_icon = folium.CustomIcon(str(depot_icon_path), icon_size=(30, 48))
 
 # Define depot coordinates as a constant
-DEPOT_LAT = 51.15867961496224
-DEPOT_LON = 4.3920503715607175
-
+DEPOT_LAT = 51.20433375241732
+DEPOT_LON = 4.404467114475300
 def _get_coordinates(node_index_map: dict) -> NDArray:
     """Returns an array of coordinates for all nodes."""
     coordinates = np.zeros((len(node_index_map), 2))

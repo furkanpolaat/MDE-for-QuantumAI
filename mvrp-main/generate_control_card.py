@@ -47,8 +47,103 @@ SAMPLER_TYPES = {SamplerType.NL: "DWave Quantum Annealing Hybrid ", SamplerType.
 
 if SHOW_DQM:
     SAMPLER_TYPES[SamplerType.DQM] = "Quantum Hybrid (DQM)"
+def sekliguzelbozukagenerate_control_card() -> html.Div:
+    vehicle_options = [
+        {"label": label, "value": sampler_type.value}
+        for sampler_type, label in VEHICLE_TYPES.items()
+    ]
+    sampler_options = [
+        {"label": label, "value": sampler_type.value}
+        for sampler_type, label in SAMPLER_TYPES.items()
+    ]
 
-def generate_control_card() -> html.Div:
+    return html.Div(
+        id="control-card",
+        children=[
+            # Upload Section
+            html.Div(
+                id="upload-container",
+                className="upload-container",
+                style={"margin-bottom": "20px"},
+                children=[
+                    html.Button(
+                        id="upload-section-button",
+                        children="Show Upload Section",
+                        n_clicks=0,
+                        style={"width": "90%", "margin": "0 auto 10px", "display": "block"},
+                    ),
+                    html.Div(
+                        id="upload-section",
+                        style={"display": "none", "padding": "10px", "border": "1px solid #ddd", "border-radius": "5px"},
+                        children=[
+                            html.Label("Upload Client Data (CSV):", style={"margin-bottom": "5px", "display": "block"}),
+                            dcc.Upload(
+                                id='upload-data',
+                                children=html.Div(['Drag and Drop or ', html.A('Select a CSV File')]),
+                                style={
+                                    'width': '100%',
+                                    'height': '50px',
+                                    'lineHeight': '50px',
+                                    'borderWidth': '1px',
+                                    'borderStyle': 'dashed',
+                                    'borderRadius': '5px',
+                                    'textAlign': 'center',
+                                    "margin-bottom": "10px",
+                                },
+                            ),
+                            dcc.Dropdown(
+                                id='file-selector',
+                                options=[
+                                    {'label': f, 'value': f} for f in
+                                    os.listdir(os.path.join(os.path.dirname(__file__), 'assets', 'CSVs')) if f.endswith('.csv')
+                                ],
+                                placeholder="Select a file...",
+                                style={"margin-bottom": "10px"},
+                            ),
+                            html.Div(id='output-data-upload', style={"margin-top": "10px"}),  # Display upload results here
+                        ]
+                    )
+                ],
+            ),
+
+            # Settings Section
+            html.Div(
+                id="settings-container",
+                className="settings-container",
+                style={"margin-bottom": "20px"},
+                children=[
+                    html.Button(
+                        id="settings-button",
+                        children="Show Settings",
+                        n_clicks=0,
+                        style={"width": "90%", "margin": "0 auto 10px", "display": "block"},
+                    ),
+                    html.Div(
+                        id="settings-section",
+                        style={"display": "none", "padding": "10px", "border": "1px solid #ddd", "border-radius": "5px"},
+                        children=[
+                            dropdown("Vehicle Type", "vehicle-type-select", sorted(vehicle_options, key=lambda op: op["value"])),
+                            slider("Vehicles to Deploy", "num-vehicles-select", NUM_VEHICLES),
+                            slider(LOCATIONS_LABEL, "num-clients-select", NUM_CLIENT_LOCATIONS),
+                            slider("The Distance around the Depot", "distance_select", BOUNDING_BOX_DISTANCE),
+                            dropdown("Solver", "sampler-type-select", sorted(sampler_options, key=lambda op: op["value"])),
+                            html.Label("Solver Time Limit (seconds)", style={"margin-top": "10px", "display": "block"}),
+                            dcc.Input(id="solver-time-limit", type="number", **SOLVER_TIME, style={"margin-bottom": "10px"}),
+                        ],
+                    ),
+                ],
+            ),
+
+            # Run Optimization Button
+            html.Button(
+                id="run-button",
+                children="Run Optimization",
+                n_clicks=0,
+                style={"width": "100%", "padding": "15px", "background-color": "#C00000", "color": "#fff", "font-size": "16px"}
+            )
+        ]
+    )
+def optimizecalisangenerate_control_card() -> html.Div:
     """
     This function generates the control card for the dashboard, which
     contains the dropdowns for selecting the scenario, model, and solver.
@@ -213,4 +308,130 @@ def generate_control_card() -> html.Div:
                 ]
             )
         ],
+    )
+
+def generate_control_card() -> html.Div:
+    vehicle_options = [
+        {"label": label, "value": sampler_type.value}
+        for sampler_type, label in VEHICLE_TYPES.items()
+    ]
+    sampler_options = [
+        {"label": label, "value": sampler_type.value}
+        for sampler_type, label in SAMPLER_TYPES.items()
+    ]
+
+    return html.Div(
+        id="control-card",
+        style={"overflow-y": "auto", "max-height": "90vh"},  # Ensures the control card stays within viewport
+        children=[
+            # Upload Section
+            html.Div(
+                id="upload-container",
+                className="upload-container",
+                style={"margin-bottom": "20px"},
+                children=[
+                    html.Button(
+                        id="upload-section-button",
+                        children="Show Upload Section",
+                        n_clicks=0,
+                        style={
+                            "width": "90%",
+                            "margin": "0 auto 10px",
+                            "display": "block",
+                            "background-color": THEME_COLOR,
+                            "color": "white",
+                            "font-size": "16px",
+                            "border-radius": "5px",
+                        },
+                    ),
+                    html.Div(
+                        id="upload-section",
+                        style={"display": "none", "padding": "10px", "border": "1px solid #ddd", "border-radius": "5px"},
+                        children=[
+                            html.Label("Upload Client Data (CSV):", style={"margin-bottom": "5px", "display": "block"}),
+                            dcc.Upload(
+                                id='upload-data',
+                                children=html.Div(['Drag and Drop or ', html.A('Select a CSV File')]),
+                                style={
+                                    'width': '100%',
+                                    'height': '50px',
+                                    'lineHeight': '50px',
+                                    'borderWidth': '1px',
+                                    'borderStyle': 'dashed',
+                                    'borderRadius': '5px',
+                                    'textAlign': 'center',
+                                    "margin-bottom": "10px",
+                                },
+                            ),
+                            dcc.Dropdown(
+                                id='file-selector',
+                                options=[
+                                    {'label': f, 'value': f} for f in
+                                    os.listdir(os.path.join(os.path.dirname(__file__), 'assets', 'CSVs')) if f.endswith('.csv')
+                                ],
+                                placeholder="Select a file...",
+                                style={"margin-bottom": "10px"},
+                            ),
+                            html.Div(id='output-data-upload', style={"margin-top": "10px"}),  # Display upload results
+                        ]
+                    )
+                ],
+            ),
+
+            # Settings Section
+            html.Div(
+                id="settings-container",
+                className="settings-container",
+                style={"margin-bottom": "20px"},
+                children=[
+                    html.Button(
+                        id="settings-button",
+                        children="Show Settings",
+                        n_clicks=0,
+                        style={
+                            "width": "90%",
+                            "margin": "0 auto 10px",
+                            "display": "block",
+                            "background-color": THEME_COLOR,
+                            "color": "white",
+                            "font-size": "16px",
+                            "border-radius": "5px",
+                        },
+                    ),
+                    html.Div(
+                        id="settings-section",
+                        style={"display": "none", "padding": "10px", "border": "1px solid #ddd", "border-radius": "5px"},
+                        children=[
+                            dropdown("Vehicle Type", "vehicle-type-select", sorted(vehicle_options, key=lambda op: op["value"])),
+                            slider("Vehicles to Deploy", "num-vehicles-select", NUM_VEHICLES),
+                            slider(LOCATIONS_LABEL, "num-clients-select", NUM_CLIENT_LOCATIONS),
+                            slider("The Distance around the Depot", "distance_select", BOUNDING_BOX_DISTANCE),
+                            dropdown("Solver", "sampler-type-select", sorted(sampler_options, key=lambda op: op["value"])),
+                            html.Label("Solver Time Limit (seconds)", style={"margin-top": "10px", "display": "block"}),
+                            dcc.Input(id="solver-time-limit", type="number", **SOLVER_TIME, style={"margin-bottom": "10px"}),
+                        ],
+                    ),
+                ],
+            ),
+
+            # Button Group (Run and Cancel)
+            html.Div(
+                id="button-group",
+                children=[
+                    html.Button(
+                        id="run-button",
+                        children="Run Optimization",
+                        n_clicks=0,
+                        style={"width": "100%", "padding": "15px", "background-color": "#C00000", "color": "#fff", "font-size": "16px"}
+                    ),
+                    html.Button(
+                        id="cancel-button",
+                        children="Cancel Optimization",
+                        n_clicks=0,
+                        className="display-none",  # Initially hidden
+                        style={"width": "100%", "padding": "15px", "margin-top": "10px", "background-color": "#444", "color": "#fff", "font-size": "16px"},
+                    ),
+                ],
+            )
+        ]
     )

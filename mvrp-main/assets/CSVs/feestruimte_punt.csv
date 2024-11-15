@@ -1,0 +1,823 @@
+﻿X,Y,OBJECTID,CODE_OBJECT,ROEPNAAM_ZZ_OBJECT,NAAM_ZAAL,HOOFDFUNCTIE_ACTIVITEITSTYPE,MAX_ZITTEND,MAX_STAAND,ORIG_FID
+492227.544400841,6658795.82736349,100285,0000007612,Ampere,Stedelijke fuifzaal,"Feest, Hobby, Logistiek, Religiebeleving, Sport, Vergader, Vergader1",,960,1
+488251.604049814,6662848.79266301,100286,0000024982,"Scouts 21ste, De Karakol",Grote zaal,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",150,150,2
+489523.098316905,6660276.32699858,100287,0000020755,De Ware Jacob,Café,"Feest, Repetitie",20,49,3
+492201.641974742,6656120.84996271,100288,0000021200,Huize Berchem,Cafetaria afzonderlijk deel,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",28,40,4
+492201.641974742,6656120.84996271,100289,0000021200,Huize Berchem,Polyvalente zaal,"Feest, Hobby, Sport, Vergader, Vergader1",30,30,5
+490947.656315335,6656921.57487771,100290,0000000503,Koetshuis Harmoniewijk,Zaaltje,"Buurtactiviteit, Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,6
+493226.92400421,6658091.57593914,100291,0000023632,May's,Zaaltje eerste verdieping,"Feest, Hobby, Religiebeleving, Sport, Vergader, Vergader1",40,40,7
+492491.908175528,6659120.87139055,100292,0000008304,Jologie,Zaal eerste verdieping,"Feest, Hobby, Repetitie, Vergader, Vergader1",25,25,8
+493526.729155108,6661209.01321064,100293,0000021565,Seefhoek,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",120,120,9
+493526.729155108,6661209.01321064,100294,0000021565,Seefhoek,Vergaderzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",6,6,10
+492616.108026603,6656696.63276473,100295,0000011977,RoodWit,Café,"Feest, Hobby, Repetitie, Vergader, Vergader1",49,99,11
+485198.961994376,6653729.57682739,100296,0000023401,Portugesehof,Turnzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,50,12
+485198.961994376,6653729.57682739,100297,0000023401,Portugesehof,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",250,628,13
+488470.092128157,6658044.23990836,100298,0000008300,Pakhuis - Huisbrouwerij,Gelijkvloers,"Feest, Vergader, Vergader1",200,230,14
+488470.092128157,6658044.23990836,100299,0000008300,Pakhuis - Huisbrouwerij,Bovenverdieping,"Feest, Hobby, Repetitie, Vergader, Vergader1",200,250,15
+492009.612608304,6661556.20065411,100300,0000008083,Expohuis,Zaaltje,"Feest, Hobby, Repetitie, Vergader, Vergader1",,49,16
+489720.317837662,6660054.64443644,100301,0000008194,De Kegelkluis,zaal,"Feest, Hobby, Sport, Vergader, Vergader1",,49,17
+493633.650000035,6658699.2873539,100302,0000007842,Mistura,Polyvalente zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",20,30,18
+484280.990844831,6652600.99641024,100303,0000008506,De Lelie,Kleine zaal,"Feest, Vergader, Vergader1",45,80,19
+494455.951527959,6659551.27283689,100304,0000010176,Bar Leon,Salon 1e verdieping,"Feest, Hobby",20,20,20
+494455.951527959,6659551.27283689,100305,0000010176,Bar Leon,Vergaderruimte 2e verdieping,"Feest, Hobby, Vergader, Vergader1",12,,21
+494455.951527959,6659551.27283689,100306,0000010176,Bar Leon,Cominatie 1e en 2e verdieping,"Feest, Hobby, Vergader, Vergader1",35,35,22
+490000.161872978,6659552.33805057,100307,0000015797,Dreadlovers,Kelder,"Feest, Hobby, Repetitie, Vergader, Vergader1",10,20,23
+489389.158646555,6650843.50221692,100308,0000013147,Mariënborgh,Grote Zaal,"Feest, Hobby, Vergader, Vergader1",85,150,24
+489389.158646555,6650843.50221692,100309,0000013147,Mariënborgh,Cafetaria,Feest,80,100,25
+489389.158646555,6650843.50221692,100310,0000013147,Mariënborgh,Combinatie café + zaal + terras,Feest,80,250,26
+489389.158646555,6650843.50221692,100311,0000013147,Mariënborgh,70's Hoek,"Feest, Vergader, Vergader1",5,,27
+489805.108204248,6659755.89485298,100312,0000012986,Mint Antwerp,Zaaltje,"Feest, Hobby, Vergader",20,20,28
+492389.170913558,6660252.77031295,100313,0000008489,Bar Oscar,Breakout Room,"Feest, Hobby, Repetitie, Vergader, Vergader1",25,60,29
+492389.170913558,6660252.77031295,100314,0000008489,Bar Oscar,Bar,"Feest, Hobby, Repetitie, Vergader, Vergader1",20,40,30
+492389.170913558,6660252.77031295,100315,0000008489,Bar Oscar,Terras,"Feest, Hobby, Repetitie, Vergader, Vergader1",20,60,31
+492389.170913558,6660252.77031295,100316,0000008489,Bar Oscar,Gebouw,"Feest, Hobby, Repetitie, Vergader, Vergader1",45,100,32
+492128.875364848,6655803.3120642,100317,0000007944,De Nieuwe Vrede,Theaterzaal gelijkvloers,"Feest, Repetitie, Vergader, Vergader1",,,33
+492128.875364848,6655803.3120642,100318,0000007944,De Nieuwe Vrede,Zuilenzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",35,69,34
+492128.875364848,6655803.3120642,100319,0000007944,De Nieuwe Vrede,Theatercafé gelijkvloers,"Feest, Hobby, Repetitie, Vergader",80,135,35
+492411.33438483,6656109.07317751,100320,0000008028,Sonseveria,Zaal gelijkvloers,"Feest, Hobby, Vergader, Vergader1",30,60,36
+490284.782004719,6660519.83103539,100321,0000010687,Persepolis,Restaurant,"Feest, Hobby, Repetitie, Vergader, Vergader1",49,49,37
+493765.851550127,6658375.8831468,100322,0000012168,Fatima's Kitchen,Keuken,"Feest, Hobby, Vergader1",14,18,38
+493765.851550127,6658375.8831468,100323,0000012168,Fatima's Kitchen,Eetkamer,"Feest, Hobby, Repetitie, Vergader, Vergader1",14,16,39
+493765.851550127,6658375.8831468,100324,0000012168,Fatima's Kitchen,Benedenverdieping,"Feest, Hobby, Repetitie, Vergader, Vergader1",14,35,40
+496005.815858395,6665933.95151452,100325,0000011655,Gouden Lotus,Cafetaria,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",30,30,41
+496055.22008658,6660324.39080583,100326,0000008244,Den Witten Hert,Grote kamer,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",14,20,42
+493861.863755121,6660624.3070366,100327,0000012810,De Garage,Zaaltje,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",40,49,43
+493043.193638567,6660506.66974173,100328,0000010688,Klappei,Filmzaal,"Feest, Repetitie, Vergader, Vergader1",,,44
+493043.193638567,6660506.66974173,100329,0000010688,Klappei,Cafetaria,"Feest, Hobby, Repetitie, Vergader, Vergader1",60,60,45
+488518.523739427,6657666.07619755,100330,0000014833,Justitiepaleis Antwerpen,Wandelzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",,299,46
+489772.887944839,6658062.82513096,100331,0000022179,Tweetakt,Opleidingszaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",25,36,47
+494202.964615316,6659920.66815275,100332,0000009451,Salon El Corazon,Eerste verdieping,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,48
+494202.964615316,6659920.66815275,100333,0000009451,Salon El Corazon,Gelijkvloers,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,49
+495566.12077804,6665756.01750775,100334,0000023916,De Zwerfkeuken,Huiskamer,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",22,35,50
+490440.090402787,6660383.55697882,100335,0000014603,Noordteater,Theaterzaal,"Feest, Repetitie, Vergader, Vergader1",,,51
+490440.090402787,6660383.55697882,100336,0000014603,Noordteater,Foyer,"Feest, Hobby, Repetitie, Vergader, Vergader1",80,100,52
+490725.109449789,6660960.96337555,100337,0000008401,Publik,Zaal,"Feest, Repetitie, Vergader",,325,53
+489878.955241932,6660787.68192121,100338,0000010820,In de Gloria,Zaaltje,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",45,45,54
+487894.671450398,6653712.14369528,100339,0000023837,Café Athletiek,Zaaltje,"Feest, Hobby, Repetitie, Vergader, Vergader1",30,49,55
+496468.978386326,6657295.98953538,100340,0000020455,The Cathouse vzw,Leefruimte,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",20,35,56
+492140.933530744,6670437.70986123,100341,0000000561,'t Velt,Refter,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",49,49,57
+492140.933530744,6670437.70986123,100342,0000000561,'t Velt,Salon,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",30,30,58
+492191.348401488,6656350.2592196,100343,0000023594,eyeLoco,Combinatie verschillende ruimten,"Feest, Repetitie, Vergader, Vergader1",50,200,59
+493678.990925035,6658558.79767408,100344,0000013127,Spartacus Borgerhout vzw,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",80,130,60
+491209.314667076,6658169.53300849,100345,0000021451,Buurthuis De Reus,Zaal gelijkvloers,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,49,61
+492527.274909863,6652425.84255956,100346,0000013304,Boven den Oven,Verbruikerszaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",30,,62
+492956.760287338,6653757.99295127,100347,0000013001,De Ketel,Zaaltje,"Feest, Hobby, Repetitie, Vergader, Vergader1",20,20,63
+493396.938402966,6661946.95131171,100348,0000009346,Den Abattoir,Restaurant,"Feest, Vergader",50,50,64
+489442.931125018,6658128.86122969,100349,0000025002,Local 51,Oranje Zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",,,65
+489442.931125018,6658128.86122969,100350,0000025002,Local 51,Blauwe Zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",,,66
+489442.931125018,6658128.86122969,100351,0000025002,Local 51,Witte Zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,67
+483762.622578374,6653046.7897812,100352,0000023518,Groen Zuid,Cafetaria,"Feest, Hobby, Repetitie, Vergader, Vergader1",100,250,68
+483762.622578374,6653046.7897812,100353,0000023518,Groen Zuid,Polyvalente zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",25,50,69
+496186.22717115,6660348.0711066,100354,0000009166,Fair Play,Achterzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",99,99,70
+494332.424161099,6664065.23738176,100355,0000011650,Zaal Bart,Grote Vergaderzaal,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",50,50,71
+494332.424161099,6664065.23738176,100356,0000011650,Zaal Bart,Grote Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",80,80,72
+494332.424161099,6664065.23738176,100357,0000011650,Zaal Bart,Kleine Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",50,50,73
+494332.424161099,6664065.23738176,100358,0000011650,Zaal Bart,Theaterzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",250,250,74
+492076.61409654,6671541.36362891,100359,0000000071,ABC Wijkcentrum,Polyvalente zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",10,30,75
+484747.746553571,6652436.97034686,100360,0000023326,Jeugdhuis Joh,Zaaltje,"Feest, Hobby, Vakantieactiviteit, Vergader, Vergader1",60,150,76
+490091.426639345,6660657.21544454,100361,0000023224,De Taloorkes,Kelder,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,65,77
+487315.299508142,6661207.91877812,100362,0000025750,Leftbanq,Theaterzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",90,149,78
+483026.543206319,6652065.5101599,100363,0000009802,Gildenhuis Moretusburg,Café,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",35,49,79
+483026.543206319,6652065.5101599,100364,0000009802,Gildenhuis Moretusburg,Grote Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",150,249,80
+491004.66299714,6657442.18222704,100365,0000023015,Luz,Polyvalente zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",49,49,81
+489707.731245208,6659321.25877496,100366,0000008303,Den Aalmoezenier,Zaal,"Feest, Hobby, Repetitie",,300,82
+491584.281704717,6659684.24574195,100367,0000021206,Louis Louis,Louis Louis - gelijkvloerse zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,50,83
+491066.931998917,6660295.30356912,100368,0000003994,"Vlaams Fruit, Het Klokhuis",Theaterzaal,"Feest, Repetitie, Vergader, Vergader1",,,84
+491066.931998917,6660295.30356912,100369,0000003994,"Vlaams Fruit, Het Klokhuis",Foyer,"Feest, Hobby, Vergader, Vergader1",60,60,85
+491066.931998917,6660295.30356912,100370,0000003994,"Vlaams Fruit, Het Klokhuis",Graf van Rubens,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",75,100,86
+492747.400266407,6661481.20380135,100371,0000012987,'t Faboert,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",49,49,87
+494158.412183587,6673527.01294075,100372,0000001378,Wijkcentrum Mariaburg,Ontmoetingsruimte,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",49,49,88
+488941.04948826,6657301.15699728,100373,0000020478,Venue219,Zaaltje,Feest,40,75,89
+490409.630401561,6661234.46969611,100374,0000013046,Goesting,Falcongalerij,"Feest, Hobby, Repetitie, Vergader, Vergader1",24,30,90
+490409.630401561,6661234.46969611,100375,0000013046,Goesting,Kelder,"Feest, Hobby, Repetitie, Vergader1",10,20,91
+490409.630401561,6661234.46969611,100376,0000013046,Goesting,Café,"Feest, Hobby, Repetitie",30,49,92
+497140.926852725,6657993.34247689,100377,0000012872,Doce Delicia,Feestzaal,"Feest, Hobby, Vergader, Vergader1",49,49,93
+491708.261756392,6660357.88778031,100378,0000024180,Area,Polyvalente ruimte,"Feest, Hobby, Repetitie, Vergader, Vergader1",120,200,94
+490483.253887679,6660335.12339636,100379,0000012391,Den Beulebak,Benedenzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",49,49,95
+490483.253887679,6660335.12339636,100380,0000012391,Den Beulebak,Gobelijnzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",12,49,96
+490483.253887679,6660335.12339636,100381,0000012391,Den Beulebak,Bovenzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",49,49,97
+496584.625134001,6662287.94866379,100382,0000000949,De Rode Valken,Lokaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",50,75,98
+491957.819955867,6656691.32389286,100383,0000025609,Kornél,Atelier,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",25,49,99
+491957.819955867,6656691.32389286,100384,0000025609,Kornél,Combinatie verbruikerszaal + atelier,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",40,80,100
+489778.417582892,6660604.9677572,100385,0000012776,Den Bengel,Zaal eerste verdieping,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",60,100,101
+489778.417582892,6660604.9677572,100386,0000012776,Den Bengel,Zaal tweede verdieping,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",50,50,102
+489778.417582892,6660604.9677572,100387,0000012776,Den Bengel,Zaal derde verdieping,"Feest, Repetitie, Vergader, Vergader1",60,70,103
+497876.06531888,6660352.41811718,100388,0000008203,'t Ezeltje,'t Ezeltje - Ezelzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,70,104
+492649.149528433,6660546.33403176,100389,0000008550,Fabriek Noord,Laaddok,"Feest, Hobby, Repetitie, Vergader, Vergader1",99,99,105
+492649.149528433,6660546.33403176,100390,0000008550,Fabriek Noord,Kelder,"Feest, Hobby, Repetitie",,49,106
+489078.740170556,6651628.01471497,100391,0000000387,Cultuur Centrum De Kern,Foyer,"Feest, Repetitie, Vergader, Vergader1",50,80,107
+489078.740170556,6651628.01471497,100392,0000000387,Cultuur Centrum De Kern,Schouwburg,"Feest, Hobby, Repetitie",,,108
+490311.900335191,6660575.11493611,100393,0000015808,ViaVia Antwerpen,Intimo,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",20,40,109
+490311.900335191,6660575.11493611,100394,0000015808,ViaVia Antwerpen,Mezzanine,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",20,40,110
+490311.900335191,6660575.11493611,100395,0000015808,ViaVia Antwerpen,Gebouw met Café,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",60,99,111
+492589.215644518,6660089.96375722,100396,0000008057,"Live Love, Love Life",Danszaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",60,80,112
+493247.996527089,6659931.60527795,100397,0000009791,Dreambuilding,De Tempel,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",24,40,113
+493247.996527089,6659931.60527795,100398,0000009791,Dreambuilding,De Loft,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,120,114
+493523.121268903,6660181.47679435,100399,0000007918,Sint-Willibrordus,Pagadder,"Buurtactiviteit, Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",35,35,115
+493523.121268903,6660181.47679435,100400,0000007918,Sint-Willibrordus,Wapper,"Buurtactiviteit, Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",40,40,116
+493523.121268903,6660181.47679435,100401,0000007918,Sint-Willibrordus,Brabo,"Buurtactiviteit, Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",90,100,117
+492150.473571749,6660616.21126874,100402,0000001293,Permeke Kubus,Eerste Verdieping,"Feest, Hobby, Repetitie, Vergader, Vergader1",20,20,118
+492150.473571749,6660616.21126874,100403,0000001293,Permeke Kubus,Tweede Verdieping,"Feest, Hobby, Repetitie, Vergader, Vergader1",80,80,119
+492150.473571749,6660616.21126874,100404,0000001293,Permeke Kubus,Modulair 1 + 2,"Feest, Hobby, Repetitie, Vergader, Vergader1",100,100,120
+496788.520710475,6660715.39767137,100405,0000008184,De Volksvriend,Café,"Feest, Hobby, Repetitie, Vergader",49,49,121
+490157.219371766,6661673.48004853,100406,0000023100,Nautiv,Bonapartezaal,"Feest, Repetitie, Vergader",60,80,122
+490157.219371766,6661673.48004853,100407,0000023100,Nautiv,Aldegondiszaal,"Feest, Repetitie, Vergader, Vergader1",90,120,123
+490157.219371766,6661673.48004853,100408,0000023100,Nautiv,Aldegondis en Bonapartezaal,"Feest, Repetitie, Vergader, Vergader1",150,200,124
+487944.096671768,6659404.61847731,100409,0000008483,Lange Wapper,Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",50,100,125
+491011.686468012,6660239.23004001,100410,0000003279,"Vlaams Fruit, Het Appeltje",Theaterzaal,"Feest, Repetitie, Vergader, Vergader1",,,126
+491011.686468012,6660239.23004001,100411,0000003279,"Vlaams Fruit, Het Appeltje",Foyer,"Feest, Hobby, Vergader, Vergader1",40,40,127
+487459.279559284,6654777.19001994,100412,0000023819,Madrassa Attailime Ar-Rahma Vzw,Grote zaal,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",49,49,128
+487459.279559284,6654777.19001994,100413,0000023819,Madrassa Attailime Ar-Rahma Vzw,Leslokaal 1,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",20,20,129
+487459.279559284,6654777.19001994,100414,0000023819,Madrassa Attailime Ar-Rahma Vzw,Leslokaal 2,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",20,20,130
+487459.279559284,6654777.19001994,100415,0000023819,Madrassa Attailime Ar-Rahma Vzw,Kleine zaal,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",20,20,131
+493471.021409667,6659118.80716263,100416,0000013404,Mokkakapot,Café,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,49,132
+490343.589695951,6659979.89272068,100417,0000023831,Monico Meir,M'Air,"Feest, Repetitie, Sport, Vergader, Vergader1",65,80,133
+490343.589695951,6659979.89272068,100418,0000023831,Monico Meir,R'Cord,"Feest, Sport, Vergader, Vergader1",20,20,134
+489601.504411518,6659622.01068195,100419,0000011981,Ontmoeting vzw,Expecto,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",125,125,135
+489601.504411518,6659622.01068195,100420,0000011981,Ontmoeting vzw,Why Waai,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",99,99,136
+489601.504411518,6659622.01068195,100421,0000011981,Ontmoeting vzw,Clicherie,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",60,60,137
+484559.451284455,6651653.70478568,100422,0000000119,Oranjerie Park Sorghvliedt,Zaaltje,"Feest, Hobby, Repetitie, Vergader, Vergader1",49,49,138
+491071.777329766,6662400.24724675,100423,0000013695,Bas-île,Grote zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",60,150,139
+485610.257884444,6651202.7934073,100424,0000008518,De Leuvenaar,Vergaderzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",35,50,140
+497101.675483076,6657563.73957894,100425,0000008302,Chiro Icarus,Lokaal 1,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",25,30,141
+497101.675483076,6657563.73957894,100426,0000008302,Chiro Icarus,Lokaal 2,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",20,25,142
+497101.675483076,6657563.73957894,100427,0000008302,Chiro Icarus,Lokaal 3,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",20,25,143
+497101.675483076,6657563.73957894,100428,0000008302,Chiro Icarus,Lokaal 4,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",25,30,144
+497101.675483076,6657563.73957894,100429,0000008302,Chiro Icarus,Lokaal 5,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",10,15,145
+490785.790548113,6658337.40706319,100430,0000008279,Continu,Achterzaal,Feest,80,80,146
+499024.028407084,6662119.7132037,100431,0000010821,Mickey's Place,Mickey's Place - Vergaderzaal,"Feest, Hobby, Vergader, Vergader1",12,20,147
+488443.416920217,6660013.74721328,100432,0000008457,Captain's Lounge,Clubhuis,"Feest, Hobby, Religiebeleving, Repetitie, Vergader",150,170,148
+488443.416920217,6660013.74721328,100433,0000008457,Captain's Lounge,Tent,"Feest, Hobby, Religiebeleving, Repetitie, Vergader",150,150,149
+488362.207279181,6651118.69326006,100434,0000012988,'t Spant,Spiegelzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",70,120,150
+488362.207279181,6651118.69326006,100435,0000012988,'t Spant,Café,Feest,35,100,151
+490624.566006182,6661405.8543238,100436,0000007915,De Lokeend,Pakhuis,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",75,125,152
+490624.566006182,6661405.8543238,100437,0000007915,De Lokeend,Voorhuis,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",40,60,153
+490077.033556154,6657824.02990693,100438,0000010211,Studios 123,Danszaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",99,99,154
+493344.394090171,6657814.36746756,100439,0000002449,Het Roze Huis,Grote Zaal,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",25,50,155
+493344.394090171,6657814.36746756,100440,0000002449,Het Roze Huis,Zolderzaal,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",70,90,156
+497149.573959166,6662503.81383286,100441,0000008352,Picass,Danscafé,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",50,150,157
+494069.076990384,6660454.11563768,100442,0000007769,Piste 05,Grote Piste gelijkvloers,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",49,49,158
+494069.076990384,6660454.11563768,100443,0000007769,Piste 05,Kleine Piste gelijkvloers,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",49,49,159
+494069.076990384,6660454.11563768,100444,0000007769,Piste 05,Modulaire zaal grote en kleine Piste,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",80,100,160
+493035.82918916,6657784.7531422,100445,0000025283,House of Ape,Vergaderzaal,"Feest, Hobby, Vergader, Vergader1",20,,161
+493035.82918916,6657784.7531422,100446,0000025283,House of Ape,Meetingroom,"Feest, Hobby, Repetitie, Vergader, Vergader1",32,70,162
+490092.910819774,6661230.96866349,100447,0000007959,'t Kwartier,Zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",80,120,163
+487858.284164171,6661271.46714465,100448,0000020940,Dakappartement Image,Ontmoetingsruimte,"Feest, Hobby, Vergader, Vergader1",49,49,164
+490421.27496361,6661610.77897728,100449,0000024140,Restaurant Marcel,La Mathilde,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",50,60,165
+490421.27496361,6661610.77897728,100450,0000024140,Restaurant Marcel,La Madeleine,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",20,20,166
+491420.889700889,6662899.42000065,100451,0000008103,'t Zwaantje,Clubboot,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",49,49,167
+492796.53879092,6660082.52389225,100452,0000010056,Local Office,Feestzaal Colonia,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,100,168
+493205.327758966,6656763.29954255,100453,0000007858,Lebowski's,Combinatie café + zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",60,97,169
+493205.327758966,6656763.29954255,100454,0000007858,Lebowski's,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",40,60,170
+493205.327758966,6656763.29954255,100455,0000007858,Lebowski's,Lodge,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",12,20,171
+490121.224803103,6660619.25930168,100456,0000012968,De Groene Waterman,Kelder,"Feest, Hobby, Repetitie, Vergader, Vergader1",90,90,172
+488670.191762614,6660850.58546322,100457,0000000970,Ontmoetingsruimte Thonetje,Polyvalente zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,173
+493480.36583161,6659030.05890813,100458,0000007811,Madam Fortuna,Zaal gelijkvloers,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",,120,174
+477552.515426286,6675325.29374128,100459,0000013158,Het Landshuis,Restaurant,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",16,16,175
+477552.515426286,6675325.29374128,100460,0000013158,Het Landshuis,Raadzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",36,36,176
+477552.515426286,6675325.29374128,100461,0000013158,Het Landshuis,Banketzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",60,60,177
+477552.515426286,6675325.29374128,100462,0000013158,Het Landshuis,'t Schoon Verdiep,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",24,24,178
+494661.18688831,6660208.06112557,100463,0000007789,Zermatt,Gelijkvloers,"Feest, Hobby, Repetitie, Vergader, Vergader1",36,49,179
+489004.245058327,6658535.24959742,100464,0000024179,Platform Bernaerts,Musemzaal,"Feest, Hobby, Vergader, Vergader1",250,250,180
+489004.245058327,6658535.24959742,100465,0000024179,Platform Bernaerts,Verlatzaal,"Feest, Vergader, Vergader1",250,250,181
+489004.245058327,6658535.24959742,100466,0000024179,Platform Bernaerts,Auditorium,"Feest, Vergader, Vergader1",250,250,182
+489004.245058327,6658535.24959742,100467,0000024179,Platform Bernaerts,Terras,"Feest, Vergader, Vergader1",100,40,183
+496035.025089934,6659370.12411528,100468,0000007740,Mariagaarde,Turnzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,184
+496035.025089934,6659370.12411528,100469,0000007740,Mariagaarde,Refter,"Feest, Hobby, Repetitie, Vergader, Vergader1",140,140,185
+498789.593448804,6658385.93402926,100470,0000012390,Kleuterschool voor Honden,Kantine,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",60,80,186
+494015.780954213,6658555.62496316,100471,0000012510,PAX,Grote Zaal en Foyer,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",70,200,187
+494015.780954213,6658555.62496316,100472,0000012510,PAX,Kleine zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,70,188
+494015.780954213,6658555.62496316,100473,0000012510,PAX,Café,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,60,189
+499128.843708883,6660290.1382313,100474,0000008229,KVC Olympic Deurne,Kantine,"Feest, Hobby, Repetitie, Vergader, Vergader1",60,70,190
+499128.843708883,6660290.1382313,100475,0000008229,KVC Olympic Deurne,Kleine zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",12,25,191
+491463.137399248,6658123.29338884,100476,0000024196,Elcker-ik,Cafetaria,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",50,100,192
+491463.137399248,6658123.29338884,100477,0000024196,Elcker-ik,Grote zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",90,100,193
+495756.818516456,6664805.03346144,100478,0000000062,Jongerencentrum Bouckenborgh,Café,"Feest, Hobby",40,120,194
+495756.818516456,6664805.03346144,100479,0000000062,Jongerencentrum Bouckenborgh,Bovenzaal,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",30,50,195
+490075.085802738,6651534.19639557,100480,0000013386,De Nieuwe Kroon,Feestzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",58,70,196
+494394.876833698,6671379.92419163,100481,0000000060,252 cc,Vergader Oost,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",20,20,197
+494394.876833698,6671379.92419163,100482,0000000060,252 cc,Vergader West,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",20,20,198
+494394.876833698,6671379.92419163,100483,0000000060,252 cc,Cafetaria,"Feest, Hobby, Repetitie, Vakantieactiviteit",30,49,199
+494394.876833698,6671379.92419163,100484,0000000060,252 cc,Podiumzaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",,90,200
+494394.876833698,6671379.92419163,100485,0000000060,252 cc,Zolder,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",40,49,201
+495961.843149799,6660400.3954201,100486,0000010746,The Grey Corner,Café,"Feest, Repetitie, Vergader",30,49,202
+489424.370742934,6660192.87127464,100487,0000012969,'t Sandt,Zaal Ridder Vic Gentils,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",40,150,203
+489424.370742934,6660192.87127464,100488,0000012969,'t Sandt,Zaal Marco Polo,Feest,24,24,204
+489424.370742934,6660192.87127464,100489,0000012969,'t Sandt,Zaal Christobal Colombus,"Feest, Hobby, Religiebeleving, Repetitie, Vergader",80,150,205
+498653.719823999,6659583.21093656,100490,0000012749,Ruggeveld TC,Kantine,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",75,120,206
+493990.835511963,6672864.43692159,100491,0000025658,De Schuur,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",100,100,207
+493868.24009575,6658615.18454877,100492,0000012105,Poppentheater Jojo,Zaal voorstellingen,"Feest, Hobby, Sport",,,208
+489374.549205851,6660546.63943232,100493,0000023932,RAS,Feestzaal,"Feest, Repetitie, Vergader, Vergader1",64,85,209
+488569.267094053,6663077.05034191,100494,0000008408,Minerva Café,Feesttent,"Feest, Repetitie, Vergader1",160,160,210
+493111.549392528,6659672.41579273,100495,0000012287,New Replay,Feestcafé,Feest,0,99,211
+496640.58215789,6661642.49899787,100496,0000008280,De Violin,Restaurant,Feest,80,120,212
+496640.58215789,6661642.49899787,100497,0000008280,De Violin,Vergaderzaal,"Feest, Vergader",30,40,213
+494784.644091427,6659776.98037846,100498,0000007861,Tango De Carmen,Danszaal,"Feest, Hobby, Repetitie, Sport, Vergader1",98,98,214
+496055.75127718,6660391.43384007,100499,0000008161,vzw Jean et Mar,Concertzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",99,99,215
+496055.75127718,6660391.43384007,100500,0000008161,vzw Jean et Mar,Café,"Feest, Hobby, Vergader, Vergader1",49,49,216
+492584.094058548,6660749.36341782,100501,A6_1701,Greinstraat,Turnzaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit",49,49,217
+486138.706714126,6652559.75079111,100502,0000008519,Breughelhof,Feestzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",75,75,218
+497148.082146638,6657483.23105146,100503,0000008332,Familia Sint Rochus,Polyvalente zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",140,200,219
+497148.082146638,6657483.23105146,100504,0000008332,Familia Sint Rochus,Winterzaal,Feest,60,70,220
+491237.912938641,6670187.13516172,100505,0000013407,Hagelkruis,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",100,100,221
+490036.302851379,6660437.8340133,100506,0000023911,Cocktails at Nine,Bar,"Feest, Vergader, Vergader1",25,100,222
+490036.302851379,6660437.8340133,100507,0000023911,Cocktails at Nine,Lounge,"Feest, Vergader",30,50,223
+490036.302851379,6660437.8340133,100508,0000023911,Cocktails at Nine,Gebouw,Feest,55,150,224
+491222.89309414,6656439.41971722,100509,0000007953,Magnus,Zaal 1 gelijkvloers,"Feest, Vergader",130,200,225
+491222.89309414,6656439.41971722,100510,0000007953,Magnus,Zaal 2 eerste verdieping,"Feest, Vergader",40,70,226
+493966.001549552,6664021.23377535,100511,0000023818,Gildenhuis Merksem,Grote zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",60,60,227
+493966.001549552,6664021.23377535,100512,0000023818,Gildenhuis Merksem,Kleine zaal,"Feest, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",20,20,228
+492688.870251193,6654052.29763201,100513,0000010246,Bergheem,Zaal Troyentenhof,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",32,,229
+492688.870251193,6654052.29763201,100514,0000010246,Bergheem,Zaal Ruytenburg,"Feest, Hobby, Repetitie, Vergader, Vergader1",32,,230
+492688.870251193,6654052.29763201,100515,0000010246,Bergheem,Zaal Strijdhof,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",120,120,231
+492174.58253885,6655605.47319199,100516,0000008061,De Zoete Linde,Feestzaal gelijkvloers,"Feest, Vergader, Vergader1",40,60,232
+490980.153449112,6662114.38849119,100517,0000023853,Plastron,Plastron - Modulaire zaal,"Feest, Vergader, Vergader1",50,50,233
+494693.605618809,6655864.689222,100518,0000001210,Den Eglantier,Zaal gelijkvloers,"Feest, Hobby, Repetitie, Vergader, Vergader1",100,170,234
+489247.685371492,6662803.4632727,100519,0000023294,Club Cabane,Feestlocatie,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",200,200,235
+489897.776072261,6657976.62770103,100520,0000008523,IVCA,Rosa,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",30,30,236
+489897.776072261,6657976.62770103,100521,0000008523,IVCA,Violetta,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,80,237
+489897.776072261,6657976.62770103,100522,0000008523,IVCA,Grote Zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,99,238
+489897.776072261,6657976.62770103,100523,0000008523,IVCA,Computerzaal,"Feest, Hobby, Vergader, Vergader1",12,25,239
+491742.370903774,6672039.10328076,100524,0000012234,Wilgehoeve,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",80,80,240
+491198.845749612,6670082.99165464,100525,0000008517,Ballantines,Zaaltje boven,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,80,241
+489154.299829237,6651292.11539898,100526,0000000105,Gemeenschapscentrum Wilrijk,Kitchenette,"Feest, Vergader, Vergader1",,4,242
+489154.299829237,6651292.11539898,100527,0000000105,Gemeenschapscentrum Wilrijk,Foyer Raadzaal,"Feest, Hobby",,142,243
+489154.299829237,6651292.11539898,100528,0000000105,Gemeenschapscentrum Wilrijk,Foyer Auditorium,"Feest, Hobby",,142,244
+489154.299829237,6651292.11539898,100529,0000000105,Gemeenschapscentrum Wilrijk,Refter - 52p,Feest,52,60,245
+489154.299829237,6651292.11539898,100530,0000000105,Gemeenschapscentrum Wilrijk,Hoogte - 18p,"Feest, Vergader, Vergader1",18,,246
+489154.299829237,6651292.11539898,100531,0000000105,Gemeenschapscentrum Wilrijk,Neerland - 12p,"Feest, Vergader, Vergader1",12,,247
+488835.570639236,6653280.67092233,100532,0000012838,Rozenkrans,Trefpunt,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",40,55,248
+488835.570639236,6653280.67092233,100533,0000012838,Rozenkrans,Kring,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",60,100,249
+488835.570639236,6653280.67092233,100534,0000012838,Rozenkrans,Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",150,250,250
+488835.570639236,6653280.67092233,100535,0000012838,Rozenkrans,Keuken,"Feest, Hobby",,10,251
+493273.473796345,6660032.55780532,100536,0000023310,Brutal,Restaurant,"Feest, Repetitie, Vergader, Vergader1",55,70,252
+491223.69204176,6661558.01685516,100537,0000024141,HAVN Church,Evenementenhal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",250,300,253
+493560.636935014,6653180.99071582,100538,0000023830,Zewopa vzw Berchem,Wijkcentrum,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",20,75,254
+494139.832940435,6658951.033862,100539,0000007743,Het Keerpunt,Polyvalente ruimte,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",75,75,255
+496180.984973964,6661228.4834346,100540,0000008307,Euro Bowling,Feestzaal gelijkvloers,"Feest, Hobby, Vergader, Vergader1",60,80,256
+496180.984973964,6661228.4834346,100541,0000008307,Euro Bowling,Feestzaal eerste verdieping,"Feest, Hobby, Vergader, Vergader1",60,80,257
+499767.728892116,6660074.9629084,100542,0000000659,Spartacus,Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",60,120,258
+499767.728892116,6660074.9629084,100543,0000000659,Spartacus,Vergaderruimte,"Feest, Hobby, Repetitie, Vergader, Vergader1",12,12,259
+484026.818396403,6652629.24660601,100544,0000000323,Gravenhof,Foyer met bar,"Feest, Repetitie, Vergader, Vergader1",100,140,260
+484026.818396403,6652629.24660601,100545,0000000323,Gravenhof,Theaterzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",150,,261
+491788.664441402,6670650.7110924,100546,0000022980,Perfect Present,Zaaltje,"Feest, Repetitie, Vergader, Vergader1",25,40,262
+491788.664441402,6670650.7110924,100547,0000022980,Perfect Present,Tuin,"Feest, Repetitie",25,40,263
+489581.565091376,6660578.47767719,100548,0000024197,Cartoon's,Zaal 1,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",,,264
+489581.565091376,6660578.47767719,100549,0000024197,Cartoon's,Zaal 2,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",,,265
+489581.565091376,6660578.47767719,100550,0000024197,Cartoon's,Zaal 3,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",,,266
+489581.565091376,6660578.47767719,100551,0000024197,Cartoon's,Sous-sol,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",,105,267
+496958.473725833,6659446.20396858,100552,0000008232,Ri4a,Kantine,"Feest, Hobby, Repetitie, Vergader, Vergader1",100,200,268
+487199.746373425,6654606.25134165,100553,0000023907,Samenlevingsopbouw Kiel,Ontmoetingsruimte,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",25,49,269
+490051.280482177,6661250.85803149,100554,0000003887,Het Stadsmagazijn,Zolder,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",50,70,270
+490051.280482177,6661250.85803149,100555,0000003887,Het Stadsmagazijn,Danszaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader",40,70,271
+490051.280482177,6661250.85803149,100556,0000003887,Het Stadsmagazijn,Jan Olieslagers,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",24,24,272
+479706.488599024,6685250.33323832,100557,0000023857,Dry Claveren,Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",120,160,273
+490011.909312117,6659488.16087108,100558,0000014827,Huis Happaert,Tuinzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",15,30,274
+490011.909312117,6659488.16087108,100559,0000014827,Huis Happaert,Pianozaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",25,75,275
+490011.909312117,6659488.16087108,100560,0000014827,Huis Happaert,Hall,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",40,75,276
+490011.909312117,6659488.16087108,100561,0000014827,Huis Happaert,Modulair,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",70,100,277
+495212.076056971,6656273.69293613,100562,0000001529,Gietschotel,Feestzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",99,,278
+490398.246255642,6662760.69995006,100563,0000008292,Strantwerpen,Paviljoen,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",180,400,279
+494857.934840053,6661914.85512437,100564,0000011133,Dinamo,Salon,"Buurtactiviteit, Feest, Hobby, Vergader, Vergader1",40,40,280
+494857.934840053,6661914.85512437,100565,0000011133,Dinamo,Combinatie salon + keuken,"Buurtactiviteit, Feest, Hobby, Repetitie, Vergader, Vergader1",30,65,281
+494723.521071086,6657200.26941389,100566,0000007841,Paroza,Eerste verdieping,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,60,282
+494723.521071086,6657200.26941389,100567,0000007841,Paroza,Tweede verdieping,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,75,283
+494723.521071086,6657200.26941389,100568,0000007841,Paroza,Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",100,220,284
+494723.521071086,6657200.26941389,100569,0000007841,Paroza,Cafetaria,Feest,60,90,285
+488371.376040943,6651144.15223757,100570,0000011903,Zaal Ars,Grote zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",160,200,286
+493916.076325933,6660060.62619483,100571,0000007873,Red Fish Factory,Unit C,"Feest, Hobby, Repetitie, Vergader1",80,150,287
+493916.076325933,6660060.62619483,100572,0000007873,Red Fish Factory,Unit D,"Feest, Hobby, Repetitie, Vergader1",30,150,288
+493916.076325933,6660060.62619483,100573,0000007873,Red Fish Factory,Combinatie Units,"Feest, Hobby, Repetitie, Vergader",120,250,289
+492307.127804167,6665611.78247625,100574,0000006668,Gemeenschapscentrum Luchtbal,Eerste verdieping,"Feest, Hobby, Religiebeleving, Repetitie, Vakantieactiviteit, Vergader, Vergader1",49,49,290
+492307.127804167,6665611.78247625,100575,0000006668,Gemeenschapscentrum Luchtbal,Tweede verdieping,"Feest, Hobby, Religiebeleving, Repetitie, Vakantieactiviteit, Vergader, Vergader1",49,49,291
+494805.178566815,6659683.28814549,100576,0000022996,La Maria,Zalen en binnenplaats,"Feest, Hobby, Repetitie, Vergader, Vergader1",49,49,292
+482602.18181699,6651872.60360521,100577,0000023097,Moretusburg,Kleine zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",45,90,293
+484232.587477423,6652971.42741359,100578,0000012873,Cultuurcafé,Café,"Feest, Hobby, Vergader",80,80,294
+484232.587477423,6652971.42741359,100579,0000012873,Cultuurcafé,Nello,"Feest, Repetitie, Vergader, Vergader1",50,50,295
+491689.671043768,6670597.81564929,100580,0000008056,Ekers Hof,Feestzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",80,80,296
+487746.920350052,6660210.39482404,100581,0000008484,Sint Anneke Centrum,Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",200,200,297
+487746.920350052,6660210.39482404,100582,0000008484,Sint Anneke Centrum,Spieken vergaderzaal 1,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",15,15,298
+487746.920350052,6660210.39482404,100583,0000008484,Sint Anneke Centrum,Spieken café,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",20,20,299
+487746.920350052,6660210.39482404,100584,0000008484,Sint Anneke Centrum,Spieken naaikamer,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",10,10,300
+487746.920350052,6660210.39482404,100585,0000008484,Sint Anneke Centrum,Spieken vergaderzaal 2,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",15,15,301
+487746.920350052,6660210.39482404,100586,0000008484,Sint Anneke Centrum,Spieken vergaderzaal 3,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",15,15,302
+487746.920350052,6660210.39482404,100587,0000008484,Sint Anneke Centrum,Spieken modulaire zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",100,100,303
+487746.920350052,6660210.39482404,100588,0000008484,Sint Anneke Centrum,Café,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",100,100,304
+487746.920350052,6660210.39482404,100589,0000008484,Sint Anneke Centrum,Vergaderzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",20,20,305
+492046.146909946,6658778.56264724,100590,0000008456,Salons De Boeck,Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader",350,500,306
+492378.105176973,6660232.22120813,100591,0000007916,De Winkelhaak,Lecture Hall,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",45,120,307
+492378.105176973,6660232.22120813,100592,0000007916,De Winkelhaak,Wellness Room,"Feest, Repetitie, Vergader, Vergader1",20,20,308
+492378.105176973,6660232.22120813,100593,0000007916,De Winkelhaak,Vintage Room,"Feest, Hobby, Repetitie, Vergader, Vergader1",12,12,309
+497473.448509481,6658412.42456408,100594,0000008278,Concerto,Achterzaal,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",60,90,310
+497473.448509481,6658412.42456408,100595,0000008278,Concerto,Voorzaal,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",60,100,311
+488381.917607099,6663172.17618245,100596,0000008317,Plaasjkaffee,Zaaltje,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",88,88,312
+496856.363956819,6656292.87469239,100597,0000011774,@The Park,Zaal Plataan,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,100,313
+496856.363956819,6656292.87469239,100598,0000011774,@The Park,Chinese Toren,"Feest, Hobby, Religiebeleving",10,30,314
+496856.363956819,6656292.87469239,100599,0000011774,@The Park,Zaal Magnolia,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,160,315
+498987.790679456,6661894.9500662,100600,0000008328,Restaurant De Kaasboerin,Restaurant De Kaasboerin - Restaurant,Feest,100,160,316
+498987.790679456,6661894.9500662,100601,0000008328,Restaurant De Kaasboerin,Restaurant De Kaasboerin - Polyvalente zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",80,150,317
+487148.059817119,6655102.79594594,100602,0000007970,Gemeenschapscentrum Den Tir,Ontmoetingsruimte,"Feest, Hobby, Repetitie, Vergader, Vergader1",99,149,318
+483807.769382195,6650442.25176983,100603,0000000669,Schietgang,Polyvalente zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",,200,319
+489672.233707389,6660133.56707631,100604,0000012420,De Groote Witte Arend,De Zoo,"Feest, Hobby, Repetitie, Vergader, Vergader1",24,24,320
+489672.233707389,6660133.56707631,100605,0000012420,De Groote Witte Arend,De Koninck,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,40,321
+489672.233707389,6660133.56707631,100606,0000012420,De Groote Witte Arend,Dolo,"Feest, Hobby, Repetitie, Vergader, Vergader1",65,80,322
+490435.195226912,6653895.96766199,100607,0000000353,Koetshuis Den Brandt,Koetskamer,"Feest, Hobby, Repetitie, Vergader, Vergader1",12,30,323
+490435.195226912,6653895.96766199,100608,0000000353,Koetshuis Den Brandt,Kleine Zolder,"Feest, Hobby, Repetitie, Vergader, Vergader1",30,45,324
+490435.195226912,6653895.96766199,100609,0000000353,Koetshuis Den Brandt,Grote Zolder,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,100,325
+488725.913833432,6663033.22601886,100610,0000008521,An's Hoeve,Restaurant,"Feest, Vergader, Vergader1",100,100,326
+488725.913833432,6663033.22601886,100611,0000008521,An's Hoeve,Terras,"Feest, Repetitie, Vergader, Vergader1",250,250,327
+488725.913833432,6663033.22601886,100612,0000008521,An's Hoeve,Kleine Zaal,"Feest, Hobby, Vergader, Vergader1",30,30,328
+493874.998851903,6659378.08738212,100613,0000008180,BAR Venetië,Feestzaal gelijkvloers,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",220,400,329
+493874.998851903,6659378.08738212,100614,0000008180,BAR Venetië,Café,"Feest, Hobby, Repetitie",45,75,330
+485460.853366225,6652853.10535695,100615,0000023187,Kleine Heide,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",90,320,331
+493237.79171324,6657952.20814269,100616,0000007839,Zurenborger,Zaal 1 gelijkvloers,"Feest, Hobby, Vergader, Vergader1",100,200,332
+493237.79171324,6657952.20814269,100617,0000007839,Zurenborger,"Zaal 2, eerste verdieping","Feest, Hobby, Repetitie, Vergader, Vergader1",50,80,333
+490407.329435026,6659507.9267917,100618,0000000344,Stedelijk Onderwijs,Alle Infrastructuur,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",1000,1000,334
+492196.332757213,6660377.54165975,100619,0000023197,deBuurt,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",60,80,335
+497553.545454973,6655878.76768798,100620,0000009966,Borgerhout - GW,Kantine,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,70,336
+490006.39225581,6660767.81914213,100621,0000012257,Fameus vzw,Zaal Zirkus,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",,150,337
+492435.125527669,6671364.94469003,100622,EK_1001,Academie Ekeren,Kleine polyvalente ruimte foyer,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",,100,338
+492435.125527669,6671364.94469003,100623,EK_1001,Academie Ekeren,Concertzaal,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",,,339
+492435.125527669,6671364.94469003,100624,EK_1001,Academie Ekeren,Speelplaats,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",,100,340
+499657.433329267,6659683.98474876,100625,0000000661,Master Schmidt Hoeve,Fuifzaal,"Feest, Repetitie",100,240,341
+484601.974337742,6651597.21351373,100626,0000000099,Districtshuis Hoboken,Trouwzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",80,,342
+484601.974337742,6651597.21351373,100627,0000000099,Districtshuis Hoboken,Vergaderzaal Breughel,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",30,80,343
+491778.886430048,6671156.8738169,100628,0000008187,'t Rood dak,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",80,99,344
+490498.247218744,6660371.49739312,100629,0000021392,De Meersenier,Cafetaria,"Feest, Repetitie, Sport, Vergader",90,90,345
+490498.247218744,6660371.49739312,100630,0000021392,De Meersenier,Polyvalente zaal,"Feest, Hobby, Sport, Vergader, Vergader1",60,60,346
+490451.600023034,6653723.45921125,100631,0000000352,Kasteel Den Brandt,Salon Jordaens,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",80,80,347
+490451.600023034,6653723.45921125,100632,0000000352,Kasteel Den Brandt,Salons Rubens,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",110,160,348
+492327.549434854,6662555.04493788,100633,0000025506,Ell Circo d'Ell Fuego,Trainingszaal,"Feest, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",49,49,349
+492327.549434854,6662555.04493788,100634,0000025506,Ell Circo d'Ell Fuego,Bar,"Feest, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",49,49,350
+492327.549434854,6662555.04493788,100635,0000025506,Ell Circo d'Ell Fuego,Danszaal,"Feest, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",30,30,351
+484859.239925826,6653486.95316621,100636,0000008492,Schuttershof,Grote zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",120,120,352
+488168.864239468,6660020.42827407,100637,0000024788,Antwerps Badhuis,Zaaltje,"Feest, Religiebeleving, Vergader, Vergader1",25,25,353
+491078.105620692,6662207.56976257,100638,0000024694,La Riva,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",200,500,354
+489631.663176043,6648250.93393412,100639,0000012829,Het Rekreatief,Bosrand,"Feest, Vergader, Vergader1",80,120,355
+489631.663176043,6648250.93393412,100640,0000012829,Het Rekreatief,Boomgaard,"Feest, Repetitie, Vergader, Vergader1",60,70,356
+489631.663176043,6648250.93393412,100641,0000012829,Het Rekreatief,Combinatie zalen,"Feest, Vergader, Vergader1",80,120,357
+489631.663176043,6648250.93393412,100642,0000012829,Het Rekreatief,Zaal Margot,"Feest, Vergader, Vergader1",35,,358
+489631.663176043,6648250.93393412,100643,0000012829,Het Rekreatief,Bovenzaal,"Feest, Vergader, Vergader1",35,,359
+492722.214701722,6660752.25725783,100644,0000009973,Dostlar Ve Kadesler Yeri,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",150,150,360
+490404.883203671,6659378.09777224,100645,0000025786,De Serre,Zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",80,180,361
+490404.883203671,6659378.09777224,100646,0000025786,De Serre,Auditorium,"Feest, Hobby, Repetitie, Vergader, Vergader1",,,362
+493147.632114309,6661105.75442564,100647,0000008311,Centrum De Wijk,Ontmoetingsruimte,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",100,100,363
+490282.081433136,6656818.27421464,100648,0000020412,Madosa vzw,Lokaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",150,250,364
+490282.081433136,6656818.27421464,100649,0000020412,Madosa vzw,Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",150,250,365
+490282.081433136,6656818.27421464,100650,0000020412,Madosa vzw,Grote keuken,"Feest, Hobby, Religiebeleving, Sport, Vergader1",,20,366
+490282.081433136,6656818.27421464,100651,0000020412,Madosa vzw,Kleine keuken,"Feest, Hobby, Religiebeleving, Vergader",8,10,367
+488804.788084714,6654121.08716407,100652,0000022630,Liberty,feestzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",90,90,368
+493027.741214707,6656845.00270885,100653,0000020394,Ca d'Oro,Cafetaria,"Feest, Hobby, Repetitie, Vergader",80,80,369
+479628.260292476,6685802.17900546,100654,0000023688,Blidscap vzw,Luifel en Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",90,90,370
+479628.260292476,6685802.17900546,100655,0000023688,Blidscap vzw,Bar,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",20,20,371
+479628.260292476,6685802.17900546,100656,0000023688,Blidscap vzw,Bloemschikkerslokaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",20,20,372
+479628.260292476,6685802.17900546,100657,0000023688,Blidscap vzw,Beeldhouwerslokaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",6,6,373
+488772.316809025,6663025.47674188,100658,0000008520,De Zeester,Restaurant,"Feest, Vergader",200,200,374
+488772.316809025,6663025.47674188,100659,0000008520,De Zeester,Terras,"Feest, Vergader",250,250,375
+488772.316809025,6663025.47674188,100660,0000008520,De Zeester,Kleine Zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",35,35,376
+489963.450768022,6661379.5103047,100661,0000024193,Cargo Club,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader",200,800,377
+492668.839191016,6662426.63843421,100662,0000024184,La Gare 27,Club,"Feest, Hobby, Repetitie, Vergader, Vergader1",80,400,378
+492668.839191016,6662426.63843421,100663,0000024184,La Gare 27,Bar,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,150,379
+492668.839191016,6662426.63843421,100664,0000024184,La Gare 27,Gebouw,"Feest, Hobby, Repetitie, Vergader, Vergader1",80,500,380
+485479.469958502,6652914.9901069,100665,0000008524,Salons Prestige,Grote Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",375,375,381
+485479.469958502,6652914.9901069,100666,0000008524,Salons Prestige,Polyvalente Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",100,100,382
+491057.291922385,6661507.21093501,100667,0000025648,HAVN,Café,"Feest, Vergader, Vergader1",25,25,383
+496062.125027881,6660462.70415628,100668,0000023752,Rozenboom,Cafetaria,"Feest, Hobby, Repetitie, Vergader, Vergader1",100,150,384
+496062.125027881,6660462.70415628,100669,0000023752,Rozenboom,Veranda,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",20,25,385
+496062.125027881,6660462.70415628,100670,0000023752,Rozenboom,Vergaderzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",10,15,386
+486588.553661984,6653694.87277657,100671,0000011139,De Twee Jossen,Theaterruimte,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",149,149,387
+486588.553661984,6653694.87277657,100672,0000011139,De Twee Jossen,Cafe Den helder van geest,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",49,49,388
+486588.553661984,6653694.87277657,100673,0000011139,De Twee Jossen,Zaal eerste verdieping,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,389
+491184.037209511,6669565.36230568,100674,0000008398,Jeugd en Ontmoetingscentrum Rozemaai,Zaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",49,49,390
+487216.545766242,6652919.02583829,100675,0000012958,Valaarhof,Snek,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",80,120,391
+487216.545766242,6652919.02583829,100676,0000012958,Valaarhof,Zaal Van Roey,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",100,250,392
+487216.545766242,6652919.02583829,100677,0000012958,Valaarhof,Bosuil,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",80,100,393
+491025.757280912,6669540.62392898,100678,0000001280,Jeugd en Cultuur,Chalet,"Feest, Hobby, Sport, Vergader, Vergader1",80,80,394
+491025.757280912,6669540.62392898,100679,0000001280,Jeugd en Cultuur,Petanquezaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",199,199,395
+491025.757280912,6669540.62392898,100680,0000001280,Jeugd en Cultuur,Minigolf,"Feest, Sport",,120,396
+490172.051253377,6662502.46002864,100681,0000020467,Oona,Magazijn Sanba,"Feest, Hobby, Repetitie, Vergader, Vergader1",80,250,397
+493624.837416539,6654985.99010695,100682,0000022498,De Veldekens,Cafetaria,"Feest, Repetitie",78,300,398
+493624.837416539,6654985.99010695,100683,0000022498,De Veldekens,Polyvalente ruimte,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",12,20,399
+493624.837416539,6654985.99010695,100684,0000022498,De Veldekens,Lounge,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",15,30,400
+489382.767837083,6659231.35216218,100685,0000000126,Habbekrats,VIP-ruimte,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",25,50,401
+489382.767837083,6659231.35216218,100686,0000000126,Habbekrats,Heldenplein,"Feest, Hobby, Religiebeleving, Repetitie, Sport",,100,402
+492410.918217663,6665351.39063514,100687,0000003900,Schouwburg Luchtbal,Theaterzaal,"Feest, Repetitie, Vergader, Vergader1",,,403
+494684.335733766,6663757.29062206,100688,0000023651,'t Dokske,Combinatie cafetaria + kleine zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,140,404
+494684.335733766,6663757.29062206,100689,0000023651,'t Dokske,Kleine zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",30,50,405
+494684.335733766,6663757.29062206,100690,0000023651,'t Dokske,Kelderruimte,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",25,40,406
+493656.259077962,6659494.15155192,100691,0000011121,Eco-café,Verbruikerszaal,"Feest, Repetitie, Vergader",30,100,407
+492161.766497788,6658245.27071472,100692,0000020352,Agataal Taalopleidingen,Lokaal Geel,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",20,30,408
+492161.766497788,6658245.27071472,100693,0000020352,Agataal Taalopleidingen,Lokaal Oranje,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",25,30,409
+492161.766497788,6658245.27071472,100694,0000020352,Agataal Taalopleidingen,Lokaal Turkoois,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",25,30,410
+492161.766497788,6658245.27071472,100695,0000020352,Agataal Taalopleidingen,Lokaal Roze,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",20,25,411
+492161.766497788,6658245.27071472,100696,0000020352,Agataal Taalopleidingen,Lokaal Paars,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",20,30,412
+492161.766497788,6658245.27071472,100697,0000020352,Agataal Taalopleidingen,Lokaal Groen,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",20,30,413
+492161.766497788,6658245.27071472,100698,0000020352,Agataal Taalopleidingen,Lokaal Blauw,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",20,30,414
+492161.766497788,6658245.27071472,100699,0000020352,Agataal Taalopleidingen,Patio,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",50,128,415
+489646.351187979,6660388.76307718,100700,0000000418,Fakkelteater,Keldertheater,"Feest, Repetitie, Vergader, Vergader1",,,416
+489646.351187979,6660388.76307718,100701,0000000418,Fakkelteater,Rode Zaal,"Feest, Repetitie, Vergader, Vergader1",,,417
+489646.351187979,6660388.76307718,100702,0000000418,Fakkelteater,Zwarte Zaal,"Feest, Repetitie, Vergader, Vergader1",,,418
+489646.351187979,6660388.76307718,100703,0000000418,Fakkelteater,Theatercafé,"Feest, Hobby, Vergader, Vergader1",185,185,419
+489646.351187979,6660388.76307718,100704,0000000418,Fakkelteater,Foyer Zwarte Zaal,"Feest, Hobby, Vergader, Vergader1",110,110,420
+494687.851080183,6660040.94319253,100705,0000003481,Matterhorn vzw,Grote zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,421
+494687.851080183,6660040.94319253,100706,0000003481,Matterhorn vzw,Kleine zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",,49,422
+494687.851080183,6660040.94319253,100707,0000003481,Matterhorn vzw,Bovenzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,423
+493553.810794536,6665265.87561702,100708,0000011629,De Cluyse,Grote zaal,"Feest, Hobby, Sport, Vergader, Vergader1",140,140,424
+493553.810794536,6665265.87561702,100709,0000011629,De Cluyse,Kleine zaal,"Feest, Hobby, Sport, Vergader, Vergader1",60,60,425
+493553.810794536,6665265.87561702,100710,0000011629,De Cluyse,Combinatie grote + kleine zaal,"Feest, Hobby, Sport, Vergader, Vergader1",120,200,426
+496436.652793748,6658053.95301109,100711,0000023680,Arena,Polyvalente zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",20,30,427
+496436.652793748,6658053.95301109,100712,0000023680,Arena,Cafetaria,"Feest, Hobby, Repetitie",60,80,428
+496436.652793748,6658053.95301109,100713,0000023680,Arena,Bibliotheekzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",8,10,429
+494511.10737513,6659347.06367028,100714,0000021566,Tafeltennisclub AFP,Cafetaria,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",60,80,430
+494511.10737513,6659347.06367028,100715,0000021566,Tafeltennisclub AFP,Pingpongzaal eerste verdieping,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader",100,200,431
+494511.10737513,6659347.06367028,100716,0000021566,Tafeltennisclub AFP,Pingpongzaal beneden,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader",100,200,432
+491534.994872278,6656634.09639291,100717,0000023728,Brouwerij De Koninck,Duvelbar,"Feest, Hobby, Repetitie, Vergader, Vergader1",100,100,433
+491534.994872278,6656634.09639291,100718,0000023728,Brouwerij De Koninck,Vip-kelder,"Feest, Hobby, Repetitie, Vergader, Vergader1",25,25,434
+491534.994872278,6656634.09639291,100719,0000023728,Brouwerij De Koninck,Brouwershuis,"Feest, Hobby, Repetitie, Vergader, Vergader1",80,80,435
+491534.994872278,6656634.09639291,100720,0000023728,Brouwerij De Koninck,De Koninck bar,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,50,436
+489119.689852659,6661944.50046674,100721,0000008316,Royal Clubhouse,Library,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",20,45,437
+489119.689852659,6661944.50046674,100722,0000008316,Royal Clubhouse,Wardroom,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",25,50,438
+489119.689852659,6661944.50046674,100723,0000008316,Royal Clubhouse,Tent,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",,160,439
+489119.689852659,6661944.50046674,100724,0000008316,Royal Clubhouse,Hangar,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",,1500,440
+481247.182638925,6683187.69905325,100725,0000013408,Molengeest,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",150,150,441
+493830.511864405,6659833.208772,100726,0000021452,KRAS Jeugwerk Borgerhout,Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",60,150,442
+490156.683333934,6659529.19835447,100727,0000000338,Kavka,Game Box,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",50,80,443
+490156.683333934,6659529.19835447,100728,0000000338,Kavka,Exporuimte,"Feest, Hobby, Vakantieactiviteit",20,20,444
+490156.683333934,6659529.19835447,100729,0000000338,Kavka,Concertzaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",,355,445
+490156.683333934,6659529.19835447,100730,0000000338,Kavka,Kaffee,"Feest, Vakantieactiviteit, Vergader",50,75,446
+490935.257597772,6662815.63947867,100731,0000024182,Antwerp Engineering Company,Grote zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",190,800,447
+490935.257597772,6662815.63947867,100732,0000024182,Antwerp Engineering Company,Kleine zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,250,448
+490935.257597772,6662815.63947867,100733,0000024182,Antwerp Engineering Company,Mezzanine,"Feest, Hobby, Repetitie, Vergader, Vergader1",30,70,449
+490935.257597772,6662815.63947867,100734,0000024182,Antwerp Engineering Company,Patio,"Feest, Hobby, Repetitie, Vergader, Vergader1",,100,450
+490935.257597772,6662815.63947867,100735,0000024182,Antwerp Engineering Company,Modulair,"Feest, Hobby, Repetitie, Vergader, Vergader1",250,900,451
+490400.517622752,6661832.56345747,100736,0000006523,MAS Havenpaviljoen,Silo,"Feest, Hobby, Repetitie",,100,452
+490247.240304814,6661406.99145637,100737,0000024195,Café d'Anvers,Zaal,"Feest, Hobby, Repetitie, Vergader",300,630,453
+490247.240304814,6661406.99145637,100738,0000024195,Café d'Anvers,Bovenruimte,"Feest, Hobby, Repetitie, Vergader",70,120,454
+484900.748432916,6649917.0947501,100739,0000023256,Scouts 28 Zaoeja,'t Macadammeke,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",130,200,455
+484262.404315066,6652995.613096,100740,0000008495,Moretus Centrum,Grote Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",150,250,456
+484262.404315066,6652995.613096,100741,0000008495,Moretus Centrum,Zomerzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",30,60,457
+484262.404315066,6652995.613096,100742,0000008495,Moretus Centrum,Café van Maria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",40,40,458
+494163.370636737,6660076.22231939,100743,0000023259,Den Drossaert,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",80,98,459
+492302.104715025,6656678.93567354,100744,0000008191,Extra City,Café,"Feest, Hobby, Vergader, Vergader1",49,,460
+492170.99205699,6665877.09103305,100745,0000008470,Café Centrum,Café,"Feest, Repetitie",70,200,461
+492170.99205699,6665877.09103305,100746,0000008470,Café Centrum,Zaaltje,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",70,100,462
+491290.798521075,6653966.43185997,100747,0000000312,Antwerp Cricket Centre,Polyvalente zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",49,49,463
+491290.798521075,6653966.43185997,100748,0000000312,Antwerp Cricket Centre,Cafetaria,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",40,40,464
+488634.177658475,6658665.56217552,100749,0000023675,Café Local,Ball Room,"Feest, Hobby, Repetitie, Vergader, Vergader1",220,700,465
+488634.177658475,6658665.56217552,100750,0000023675,Café Local,Balkon,"Feest, Hobby, Repetitie, Vergader, Vergader1",140,140,466
+488634.177658475,6658665.56217552,100751,0000023675,Café Local,Mercado,"Feest, Hobby, Vergader, Vergader1",70,200,467
+494677.186215946,6659243.27699053,100752,0000001381,COC 't Werkhuys,Kaffee gelijkvloers,"Feest, Hobby, Repetitie, Vergader",80,90,468
+483829.10850883,6660066.24105323,100753,0000000485,FC Turk Sport,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,250,469
+491468.389997537,6660869.06879019,100754,0000007979,Apostolatus Maris Antwerpen,Koopvaardijzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",100,120,470
+491468.389997537,6660869.06879019,100755,0000007979,Apostolatus Maris Antwerpen,Mercatorzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",16,30,471
+480702.156017724,6684815.81222888,100756,0000009277,Zandvliet Sport vzw,Kantine,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",200,200,472
+480702.156017724,6684815.81222888,100757,0000009277,Zandvliet Sport vzw,Zaaltje,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",40,40,473
+480702.156017724,6684815.81222888,100758,0000009277,Zandvliet Sport vzw,Voetbalveld A,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",,24,474
+491635.242385539,6660109.43084919,100759,0000024178,Pure-Liner,Schip 1,"Feest, Vergader",250,600,475
+491635.242385539,6660109.43084919,100760,0000024178,Pure-Liner,Schip 2,"Feest, Vergader",250,600,476
+491679.463334991,6656097.77127662,100761,0000001193,Groenhout,Stede Stanislas (Grote Steenweg 75),"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",100,150,477
+491679.463334991,6656097.77127662,100762,0000001193,Groenhout,Conferentiezaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",40,60,478
+497603.783997419,6662449.28573277,100763,0000008188,FC Bosuil,Benedenzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",800,1000,479
+497603.783997419,6662449.28573277,100764,0000008188,FC Bosuil,Bovenzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",350,500,480
+487595.784391463,6654956.99908521,100765,0000008487,Royale,Lounge,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",35,35,481
+487595.784391463,6654956.99908521,100766,0000008487,Royale,Zaal A,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",200,450,482
+487595.784391463,6654956.99908521,100767,0000008487,Royale,Zaal B,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",150,450,483
+489277.529293528,6658714.45418233,100768,0000024220,Hiberniaschool,Grote theaterzaal,"Feest, Hobby, Repetitie, Vergader",300,,484
+489277.529293528,6658714.45418233,100769,0000024220,Hiberniaschool,Turnzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",300,300,485
+489277.529293528,6658714.45418233,100770,0000024220,Hiberniaschool,Foyer,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",300,400,486
+489277.529293528,6658714.45418233,100771,0000024220,Hiberniaschool,Kleine zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",100,150,487
+494473.238258986,6659133.50805994,100772,0000023073,Hoge Weg,Cafetaria,"Feest, Hobby, Repetitie, Vergader, Vergader1",60,,488
+492390.974392247,6662261.79047453,100773,0000001177,Platform Spoor Noord,Zomerbar,"Feest, Hobby, Repetitie, Sport, Vergader",300,500,489
+492390.974392247,6662261.79047453,100774,0000001177,Platform Spoor Noord,Infrastructuur,"Feest, Hobby, Repetitie, Sport, Vergader",500,3000,490
+490608.894572438,6660715.63498903,100775,0000023813,"De Plataan, Volkscantina",Zaaltje,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",75,75,491
+489590.099444657,6658821.57867903,100776,0000021377,Campus National Thomas More,Grote zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",149,149,492
+491670.185890549,6656636.21559007,100777,0000008532,De  Finale,Auditorium 1,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",,,493
+491670.185890549,6656636.21559007,100778,0000008532,De  Finale,Auditorium 2,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",,,494
+491670.185890549,6656636.21559007,100779,0000008532,De  Finale,Combinatie Auditorium 1+2,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",,,495
+491670.185890549,6656636.21559007,100780,0000008532,De  Finale,Cafetaria,"Feest, Hobby, Religiebeleving, Vergader",89,,496
+487978.650859611,6659470.37218469,100781,0000008486,"Lange Wapper, Meermin","Lange Wapper, Meermin - Feestzaal","Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",50,100,497
+490172.690678222,6661992.05501025,100782,0000015815,Festina Lente,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",120,200,498
+492363.447584355,6659121.8789154,100783,0000024181,12th Floor Lindner - Events,Lindner Hotel - The 12th Floor,"Feest, Hobby, Religiebeleving",160,160,499
+494624.899854879,6658871.17746303,100784,0000023074,De Fontein,Cafetaria,"Feest, Hobby, Repetitie, Vergader, Vergader1",75,75,500
+488819.177557006,6661256.32421369,100785,0000023891,Zeescoutsbasis Linkeroever,Baken 165,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",80,150,501
+489941.514589323,6659540.39771805,100786,0000013035,Pulcinella,Eetzaal,"Feest, Hobby, Repetitie, Vergader",55,120,502
+489941.514589323,6659540.39771805,100787,0000013035,Pulcinella,Bar,"Feest, Hobby, Repetitie, Vergader",55,120,503
+490830.857159303,6664171.81018905,100788,0000009998,De Ark,Glazen Torengebouw,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",104,250,504
+490830.857159303,6664171.81018905,100789,0000009998,De Ark,Grote Zaal,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",250,465,505
+483903.666288608,6651470.19049054,100790,0000023098,Victor De Bruyne,Grote zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",140,275,506
+490764.501825814,6659899.90063122,100791,0000009969,Paleis op de Meir,Spiegelzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",140,250,507
+493365.236179296,6660728.16974225,100792,0000022543,Studio,Danszaal,"Feest, Hobby, Repetitie",49,49,508
+493365.236179296,6660728.16974225,100793,0000022543,Studio,Grote Hal,"Feest, Hobby, Repetitie",49,49,509
+494705.211047211,6666945.79277614,100794,0000025118,Chiro Sam,Pinkelslokaal,"Feest, Hobby, Repetitie, Sport",25,30,510
+492662.840710083,6661654.0871004,100795,A6_1102,Prevenda,De Kroonzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,511
+492662.840710083,6661654.0871004,100796,A6_1102,Prevenda,Zaal Tierenteyn,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,512
+493405.623136289,6661560.36331378,100797,0000000077,Oude Badhuis,Wasserij,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",200,400,513
+493405.623136289,6661560.36331378,100798,0000000077,Oude Badhuis,Badzaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",,80,514
+493405.623136289,6661560.36331378,100799,0000000077,Oude Badhuis,Den Bleek,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",30,30,515
+493405.623136289,6661560.36331378,100800,0000000077,Oude Badhuis,Douchezaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",,80,516
+489241.597412164,6651777.84938935,100801,0000000414,VIZIT,Grote Zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",120,255,517
+489241.597412164,6651777.84938935,100802,0000000414,VIZIT,Kaffee,"Feest, Hobby, Repetitie, Vergader",49,49,518
+489241.597412164,6651777.84938935,100803,0000000414,VIZIT,Kleine Zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",20,49,519
+491252.390946012,6659281.85344143,100804,0000024701,"Elckerlyc, OLVC",Theaterzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",800,,520
+491252.390946012,6659281.85344143,100805,0000024701,"Elckerlyc, OLVC",Feestzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader",400,800,521
+491252.390946012,6659281.85344143,100806,0000024701,"Elckerlyc, OLVC",Foyer,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader",100,150,522
+491739.74024079,6656622.09978125,100807,0000008249,Ten Gaarde,Ten Gaarde - Polyvalente zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",70,100,523
+491739.74024079,6656622.09978125,100808,0000008249,Ten Gaarde,Ten Gaarde - Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,150,524
+489349.135264952,6659358.05180789,100809,0000000253,coStA,Kleine Zaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",80,100,525
+489349.135264952,6659358.05180789,100810,0000000253,coStA,Grote Zaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",130,180,526
+491126.223977885,6662035.25217408,100811,0000025746,Port of Creative Antwerp by FMT,Auditorium,"Feest, Hobby, Repetitie, Vergader, Vergader1",,,527
+491126.223977885,6662035.25217408,100812,0000025746,Port of Creative Antwerp by FMT,Bibliotheek,"Feest, Hobby, Repetitie, Sport, Vergader",200,200,528
+491126.223977885,6662035.25217408,100813,0000025746,Port of Creative Antwerp by FMT,Foyer,"Feest, Hobby, Repetitie, Vergader, Vergader1",,200,529
+491126.223977885,6662035.25217408,100814,0000025746,Port of Creative Antwerp by FMT,Refter,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,200,530
+491126.223977885,6662035.25217408,100815,0000025746,Port of Creative Antwerp by FMT,Vijfde verdieping,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,180,531
+491126.223977885,6662035.25217408,100816,0000025746,Port of Creative Antwerp by FMT,Atelier of kantoor,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",20,35,532
+491126.223977885,6662035.25217408,100817,0000025746,Port of Creative Antwerp by FMT,Het Eiland,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,100,533
+492351.029744567,6656544.44338528,100818,0000007721,'t Oud Kapelleke,Grote zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",125,200,534
+493252.602463767,6660004.79387284,100819,0000000709,Cortina,Sporthal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader",200,200,535
+493252.602463767,6660004.79387284,100820,0000000709,Cortina,Cafetaria,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",99,99,536
+495512.615745265,6662502.89726095,100821,0000023248,Kronenburg,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,220,537
+495228.123127935,6665051.98318472,100822,0000011104,De Volkslust,Kleine zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",90,150,538
+495228.123127935,6665051.98318472,100823,0000011104,De Volkslust,Grote zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",300,400,539
+488394.820741527,6658395.50361988,100824,0000024234,"Fotomuseum, Cinema Zuid",Grote zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",147,,540
+488394.820741527,6658395.50361988,100825,0000024234,"Fotomuseum, Cinema Zuid",Kleine zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",87,,541
+497449.091125616,6659900.58187379,100826,0000009215,Kasteel Rivierenhof,Luchterzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",55,90,542
+497449.091125616,6659900.58187379,100827,0000009215,Kasteel Rivierenhof,Eikenzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",25,40,543
+497449.091125616,6659900.58187379,100828,0000009215,Kasteel Rivierenhof,Kaartzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",25,40,544
+490919.141326649,6663465.31656763,100829,0000011470,Kerkschip Antwerpen,Feestzaal,"Feest, Repetitie, Vergader, Vergader1",110,180,545
+490919.141326649,6663465.31656763,100830,0000011470,Kerkschip Antwerpen,Taverne,"Feest, Repetitie, Vergader, Vergader1",30,40,546
+490919.141326649,6663465.31656763,100831,0000011470,Kerkschip Antwerpen,Taverne + Feestzaal,"Feest, Repetitie, Vergader, Vergader1",110,180,547
+493546.933607849,6660297.20850387,100832,0000003979,Troubleyn en Jan Fabre,Laboratorium,"Feest, Repetitie",50,50,548
+492165.633097817,6667116.327512,100833,0000004337,Uilenspiegel vzw,Zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,49,549
+491825.807816383,6661865.52610463,100834,0000023311,House of Innovation,Treehouse,"Feest, Hobby, Vergader, Vergader1",8,8,550
+491825.807816383,6661865.52610463,100835,0000023311,House of Innovation,Playground,"Feest, Hobby, Vergader, Vergader1",25,25,551
+491825.807816383,6661865.52610463,100836,0000023311,House of Innovation,Jungle Room,"Feest, Hobby, Vergader, Vergader1",12,12,552
+491825.807816383,6661865.52610463,100837,0000023311,House of Innovation,Living + Playground,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,100,553
+497384.586527021,6661475.76723403,100838,0000000089,Deurne Podium,Cafetaria,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,100,554
+497384.586527021,6661475.76723403,100839,0000000089,Deurne Podium,Exporuimte,"Feest, Hobby, Repetitie, Vergader, Vergader1",75,100,555
+497384.586527021,6661475.76723403,100840,0000000089,Deurne Podium,Combinatie podiumzaal + exporuimte,"Feest, Hobby, Repetitie, Vergader1",600,,556
+496983.241488791,6658515.88115807,100841,0000008205,Dansen Roels,Grote zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",600,700,557
+496983.241488791,6658515.88115807,100842,0000008205,Dansen Roels,Spiegelzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",180,250,558
+494582.521625278,6665302.71794616,100843,0000023092,NMKT,NMKT - Bar,"Feest, Hobby, Vergader, Vergader1",30,30,559
+494582.521625278,6665302.71794616,100844,0000023092,NMKT,NMKT - Theaterzaal,"Feest, Hobby, Repetitie, Vergader1",85,85,560
+494582.521625278,6665302.71794616,100845,0000023092,NMKT,NMKT - Repetitielokaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,40,561
+493744.155776489,6654667.13970227,100846,0000007860,De Verrezen Heer,Paviljoen gelijkvloers,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",60,80,562
+493744.155776489,6654667.13970227,100847,0000007860,De Verrezen Heer,Ontmoetingsruimte gelijkvloers,"Feest, Hobby, Religiebeleving, Vergader",,200,563
+488751.163906463,6662097.84315767,100848,0000023087,Cultureel Centrum ter Schelde,Grote zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",300,400,564
+488751.163906463,6662097.84315767,100849,0000023087,Cultureel Centrum ter Schelde,Kleine zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",50,80,565
+491625.774624188,6670706.30818532,100850,0000008173,Ekerse Theaterzaal,Zaal,"Feest, Repetitie, Vergader, Vergader1",,,566
+490986.864050872,6651472.21451378,100851,0000023174,Romanza,Polyvalente ruimte,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",70,70,567
+490986.864050872,6651472.21451378,100852,0000023174,Romanza,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",85,100,568
+494611.697113112,6669105.389147,100853,0000008504,Hof Ter Delft,Veltwijck I,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",100,200,569
+494611.697113112,6669105.389147,100854,0000008504,Hof Ter Delft,Veltwijck II,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",200,400,570
+494611.697113112,6669105.389147,100855,0000008504,Hof Ter Delft,Veltwijck I en II,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",200,600,571
+494611.697113112,6669105.389147,100856,0000008504,Hof Ter Delft,Orangerie,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",60,120,572
+494611.697113112,6669105.389147,100857,0000008504,Hof Ter Delft,Bist,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",60,150,573
+486808.936224945,6655092.91097259,100858,0000000719,NOVA,Bar,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",150,150,574
+486808.936224945,6655092.91097259,100859,0000000719,NOVA,Leslokaal,"Feest, Hobby, Religiebeleving, Repetitie, Vakantieactiviteit, Vergader, Vergader1",20,20,575
+486808.936224945,6655092.91097259,100860,0000000719,NOVA,Studio,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",20,20,576
+486808.936224945,6655092.91097259,100861,0000000719,NOVA,Sterrenzaal,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",50,50,577
+486808.936224945,6655092.91097259,100862,0000000719,NOVA,Repetitieruimte,"Feest, Hobby, Religiebeleving, Repetitie, Vakantieactiviteit, Vergader, Vergader1",30,99,578
+489941.32484611,6661929.76417044,100863,0000007941,Barcelona Meeting,Zaal,"Feest, Repetitie, Vergader, Vergader1",80,180,579
+489941.32484611,6661929.76417044,100864,0000023809,Out Of The Box,Creative Lounge,"Feest, Vergader, Vergader1",49,49,580
+489941.32484611,6661929.76417044,100865,0000023809,Out Of The Box,Yellow Box,"Feest, Vergader1",,6,581
+489941.32484611,6661929.76417044,100866,0000023809,Out Of The Box,Blue Box,"Feest, Vergader1",,6,582
+489941.32484611,6661929.76417044,100867,0000023809,Out Of The Box,Orange Box,"Feest, Vergader1",,6,583
+489941.32484611,6661929.76417044,100868,0000023809,Out Of The Box,Green Box,"Feest, Vergader1",,6,584
+489941.32484611,6661929.76417044,100869,0000023809,Out Of The Box,Red Box,"Feest, Vergader1",,4,585
+493951.943484808,6659257.0446123,100870,0000007748,IMS Borgerhout,Polyvalente sportzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",70,100,586
+489354.341934053,6650244.94028095,100871,0000022499,Oversnes,Polyvalente ruimte,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",84,145,587
+493790.127127258,6654438.64038976,100872,0000009064,BluePoint Antwerpen,Marco Polo A,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",120,240,588
+493790.127127258,6654438.64038976,100873,0000009064,BluePoint Antwerpen,Marco Polo B,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",100,240,589
+493790.127127258,6654438.64038976,100874,0000009064,BluePoint Antwerpen,Combinatie Marco Polo A_B,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",260,500,590
+493790.127127258,6654438.64038976,100875,0000009064,BluePoint Antwerpen,Orangerie,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",120,250,591
+493790.127127258,6654438.64038976,100876,0000009064,BluePoint Antwerpen,Vasco Da Gama 0.07,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",70,,592
+493790.127127258,6654438.64038976,100877,0000009064,BluePoint Antwerpen,James Cook,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",120,330,593
+493790.127127258,6654438.64038976,100878,0000009064,BluePoint Antwerpen,Zomerterras&Cocktailbar,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",60,100,594
+493790.127127258,6654438.64038976,100879,0000009064,BluePoint Antwerpen,Combinatie Marco Polo A_B en Orangerie,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",360,730,595
+492345.943263523,6652692.75107487,100880,0000009974,Centrum Oosterveld,Sarto,"Feest, Hobby, Religiebeleving, Vergader, Vergader1",60,80,596
+492345.943263523,6652692.75107487,100881,0000009974,Centrum Oosterveld,Keizershoeve,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",80,90,597
+492345.943263523,6652692.75107487,100882,0000009974,Centrum Oosterveld,Meyer,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",150,250,598
+489359.297308821,6658601.99795081,100883,0000011861,Sint-Walburgiskerk,Atrium,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",80,120,599
+479910.21404766,6685340.89275903,100884,0000023641,Martinushoeve,Zaal 1858,"Feest, Religiebeleving, Vergader, Vergader1",180,250,600
+479910.21404766,6685340.89275903,100885,0000023641,Martinushoeve,Corneliuskamer,"Feest, Religiebeleving, Vergader, Vergader1",38,50,601
+479910.21404766,6685340.89275903,100886,0000023641,Martinushoeve,Oogst5,"Feest, Religiebeleving, Vergader, Vergader1",110,200,602
+479910.21404766,6685340.89275903,100887,0000023641,Martinushoeve,Tuin,"Feest, Religiebeleving, Vergader, Vergader1",180,250,603
+479910.21404766,6685340.89275903,100888,0000023641,Martinushoeve,Kalverstal,"Feest, Religiebeleving, Vergader, Vergader1",30,40,604
+492848.110800653,6659007.45812857,100889,0000001184,De Branderij,Grote Zaal gelijkvloers,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",70,180,605
+490892.269395384,6659663.50567328,100890,0000009968,Horta,Art Nouveau Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",500,1000,606
+491572.86297208,6656662.76225109,100891,0000020967,Afspanning De Hand,Zaaltje,"Feest, Hobby, Sport, Vergader, Vergader1",49,110,607
+484069.992532975,6650359.56801423,100892,0000007877,Outfort,Outfort - Hoofdfrontgebouw,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",200,249,608
+484069.992532975,6650359.56801423,100893,0000007877,Outfort,Outfort - Caponnière,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",140,249,609
+492271.194424195,6656238.44734299,100894,0000000933,ccBe,Foyer,"Feest, Repetitie, Vergader",50,100,610
+492271.194424195,6656238.44734299,100895,0000000933,ccBe,Blauwe Zaal,"Feest, Repetitie, Sport, Vergader, Vergader1",30,60,611
+494562.062922858,6655924.81194517,100896,0000007846,Groenenhoek,Keuken,"Feest, Hobby, Religiebeleving, Vergader1",,10,612
+494562.062922858,6655924.81194517,100897,0000007846,Groenenhoek,Vervaetzaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",64,104,613
+494562.062922858,6655924.81194517,100898,0000007846,Groenenhoek,Kleine zaal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",20,20,614
+490329.988411024,6661889.24661585,100899,0000024183,9 Beaufort,Zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",130,180,615
+490329.988411024,6661889.24661585,100900,0000024183,9 Beaufort,Terras,"Feest, Hobby, Vergader, Vergader1",,100,616
+484339.932826244,6650475.05681452,100901,0000004359,Outfort,Outfort - Caponnière,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",140,249,617
+489547.989309166,6659874.25156822,100902,0000021306,Den Oever,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",200,250,618
+489547.989309166,6659874.25156822,100903,0000021306,Den Oever,Hobbyzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",49,80,619
+489547.989309166,6659874.25156822,100904,0000021306,Den Oever,Vergaderzaal 1,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",15,15,620
+489547.989309166,6659874.25156822,100905,0000021306,Den Oever,Vergaderzaal 2,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",15,15,621
+487317.108123842,6654813.15232757,100906,0000023446,De Boskes,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",80,160,622
+487317.108123842,6654813.15232757,100907,0000023446,De Boskes,Grote zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,50,623
+492328.252046842,6661798.98291991,100908,0000021256,Essenhof,Cafetaria,"Feest, Repetitie, Sport, Vergader, Vergader1",65,90,624
+490029.366021984,6659657.90136155,100909,0000000411,AMUZ,Concertzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",250,500,625
+490029.366021984,6659657.90136155,100910,0000000411,AMUZ,Oude Foyer,"Feest, Hobby, Repetitie, Vergader, Vergader1",60,150,626
+490029.366021984,6659657.90136155,100911,0000000411,AMUZ,Nieuwe Foyer,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,100,627
+490029.366021984,6659657.90136155,100912,0000000411,AMUZ,Foyer Modulair,"Feest, Hobby, Repetitie, Vergader, Vergader1",110,250,628
+490029.366021984,6659657.90136155,100913,0000000411,AMUZ,VIP-ruimte,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",20,40,629
+493570.815673484,6658914.60667188,100914,0000001370,De Shelter,Shelterzaal,"Feest, Repetitie, Vergader, Vergader1",50,80,630
+491267.910590843,6660358.51440024,100915,0000023751,Auxilia,Auditorium,"Feest, Hobby, Sport, Vergader, Vergader1",134,250,631
+491267.910590843,6660358.51440024,100916,0000023751,Auxilia,Wapper,"Feest, Hobby, Sport, Vergader, Vergader1",30,30,632
+491267.910590843,6660358.51440024,100917,0000023751,Auxilia,Opsinjoorke,"Feest, Hobby, Sport, Vergader, Vergader1",20,20,633
+491267.910590843,6660358.51440024,100918,0000023751,Auxilia,Pagadder,"Feest, Hobby, Sport, Vergader, Vergader1",16,16,634
+491267.910590843,6660358.51440024,100919,0000023751,Auxilia,Hall,"Feest, Hobby, Sport, Vergader, Vergader1",,250,635
+490247.812104564,6659125.38141708,100920,0000011143,"De Studio, Villanella",Foyer,"Feest, Vergader, Vergader1",45,100,636
+490247.812104564,6659125.38141708,100921,0000011143,"De Studio, Villanella",Studio Large,"Feest, Vergader, Vergader1",45,80,637
+490247.812104564,6659125.38141708,100922,0000011143,"De Studio, Villanella",De Fred,"Feest, Vergader, Vergader1",45,80,638
+490247.812104564,6659125.38141708,100923,0000011143,"De Studio, Villanella",Theaterzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",200,200,639
+491185.954797517,6661068.60155736,100924,0000020771,Gate 15,Tarmac,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",85,140,640
+491185.954797517,6661068.60155736,100925,0000020771,Gate 15,MeetAndGreet,"Feest, Hobby, Repetitie, Vergader, Vergader1",30,30,641
+496705.824786323,6655718.67258654,100926,0000001411,Deurnese Turners Sport,Terras,"Feest, Religiebeleving",40,40,642
+496705.824786323,6655718.67258654,100927,0000023905,Deurnese Turners Cafetaria,Cafetaria,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",150,200,643
+488446.444807474,6657958.79326206,100928,0000025610,Zuiderkroon,Foyer,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",550,900,644
+488446.444807474,6657958.79326206,100929,0000025610,Zuiderkroon,Theaterzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",550,865,645
+497306.151069139,6662982.29641002,100930,0000012759,Ertbrand Tennisclub,Cafetaria,"Feest, Hobby, Repetitie, Vergader, Vergader1",60,120,646
+494824.89541508,6665000.29946558,100931,0000013412,De Zeelbaan,Vergaderzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",8,10,647
+494824.89541508,6665000.29946558,100932,0000013412,De Zeelbaan,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",200,200,648
+494824.89541508,6665000.29946558,100933,0000013412,De Zeelbaan,Kleine cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",40,40,649
+492853.346034492,6659973.73626727,100934,0000008044,Wok van Antwerpen,Zaal boven,"Feest, Religiebeleving, Vergader, Vergader1",100,100,650
+492853.346034492,6659973.73626727,100935,0000008044,Wok van Antwerpen,Achterzaal,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",200,200,651
+492413.158358285,6666166.08535984,100936,0000001435,Cultureel Ontmoetingscentrum Luchtbal,Combinatie Tuinzaal + 2 vergaderzalen,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",140,200,652
+492413.158358285,6666166.08535984,100937,0000001435,Cultureel Ontmoetingscentrum Luchtbal,Combinatie Tuinzaal + 4 vergaderzalen,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",180,250,653
+492413.158358285,6666166.08535984,100938,0000001435,Cultureel Ontmoetingscentrum Luchtbal,Bovenzaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",100,200,654
+492413.158358285,6666166.08535984,100939,0000001435,Cultureel Ontmoetingscentrum Luchtbal,Tuinzaal,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",100,150,655
+489712.102202027,6660533.82559457,100940,0000000121,Stadhuis Antwerpen,Leyszaal,"Feest, Vergader, Vergader1",60,99,656
+489712.102202027,6660533.82559457,100941,0000000121,Stadhuis Antwerpen,Trouwzaal,"Feest, Vergader, Vergader1",96,120,657
+489712.102202027,6660533.82559457,100942,0000000121,Stadhuis Antwerpen,Wandelzaal,"Feest, Vergader, Vergader1",60,100,658
+492051.327959464,6660925.85180356,100943,0000021255,De Olijftak,Polyvalente zaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",30,30,659
+492051.327959464,6660925.85180356,100944,0000021255,De Olijftak,Turnzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",30,30,660
+492051.327959464,6660925.85180356,100945,0000021255,De Olijftak,Cafetaria,"Feest, Hobby, Repetitie, Vergader",120,120,661
+495601.030950653,6654898.93012287,100946,0000011649,Stampe en Vertongen,Museum,"Feest, Repetitie",50,150,662
+494878.353670108,6657772.80087842,100947,0000000018,Sporthal Luisbekelaar,Cafetaria,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",75,80,663
+493449.82287001,6661512.84257785,100948,0000000522,Sportoase,Vergaderzaal,"Feest, Hobby, Vergader, Vergader1",30,60,664
+493449.82287001,6661512.84257785,100949,0000000522,Sportoase,Danszaal,"Feest, Hobby, Repetitie, Sport, Vergader1",30,30,665
+493449.82287001,6661512.84257785,100950,0000000522,Sportoase,Brasserie,"Feest, Hobby, Repetitie, Sport, Vergader1",49,49,666
+496716.247578111,6659401.44437426,100951,0000023754,Kasteel Sterckshof,Hartenkamer,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,65,667
+496716.247578111,6659401.44437426,100952,0000023754,Kasteel Sterckshof,Binnentuin,"Feest, Hobby, Religiebeleving, Repetitie",100,150,668
+488789.292230813,6658837.15883007,100953,0000022991,Zuiderpershuis,Kleine zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",100,150,669
+488789.292230813,6658837.15883007,100954,0000022991,Zuiderpershuis,Grote zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",450,700,670
+488789.292230813,6658837.15883007,100955,0000022991,Zuiderpershuis,Atelierzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",80,80,671
+488789.292230813,6658837.15883007,100956,0000022991,Zuiderpershuis,Polyvalente zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",100,180,672
+488789.292230813,6658837.15883007,100957,0000022991,Zuiderpershuis,Hangar,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",,450,673
+487527.048819752,6655792.30221784,100958,0000023854,Cafetaria Players Sporthal Kiel,Zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",80,200,674
+489208.769453192,6657295.01041261,100959,0000023260,Hof Ter Beke,Cafetaria,"Feest, Hobby, Repetitie, Vergader, Vergader1",120,200,675
+489208.769453192,6657295.01041261,100960,0000023260,Hof Ter Beke,Polyvalente zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,70,676
+490088.546274188,6660168.37218822,100961,0000023257,Hilton Antwerp,Cullinan,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",40,50,677
+490088.546274188,6660168.37218822,100962,0000023257,Hilton Antwerp,Florentine,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",40,50,678
+490088.546274188,6660168.37218822,100963,0000023257,Hilton Antwerp,Hope,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",30,40,679
+490088.546274188,6660168.37218822,100964,0000023257,Hilton Antwerp,Sancy,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",60,80,680
+490088.546274188,6660168.37218822,100965,0000023257,Hilton Antwerp,Shah,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",40,50,681
+490088.546274188,6660168.37218822,100966,0000023257,Hilton Antwerp,Tiffany,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",70,80,682
+490088.546274188,6660168.37218822,100967,0000023257,Hilton Antwerp,Shah & Tiffany,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",110,130,683
+490088.546274188,6660168.37218822,100968,0000023257,Hilton Antwerp,Lijn,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",120,120,684
+490088.546274188,6660168.37218822,100969,0000023257,Hilton Antwerp,Teun,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",120,150,685
+490088.546274188,6660168.37218822,100970,0000023257,Hilton Antwerp,Lijn & Teun,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",240,300,686
+490088.546274188,6660168.37218822,100971,0000023257,Hilton Antwerp,Foyer,"Feest, Hobby, Religiebeleving, Repetitie, Vergader",150,350,687
+490088.546274188,6660168.37218822,100972,0000023257,Hilton Antwerp,Belle Epoque,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",800,1000,688
+490088.546274188,6660168.37218822,100973,0000023257,Hilton Antwerp,Groenplaats,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",200,200,689
+490088.546274188,6660168.37218822,100974,0000023257,Hilton Antwerp,Belle Epoque & Groenplaats,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",1000,1200,690
+491910.878489591,6664394.29179615,100975,0000023682,Dock3,Mainroom,"Feest, Hobby, Repetitie, Sport, Vergader",250,1000,691
+491910.878489591,6664394.29179615,100976,0000023682,Dock3,Aura,"Feest, Hobby, Repetitie, Sport, Vergader",200,350,692
+491910.878489591,6664394.29179615,100977,0000023682,Dock3,Skyclub,"Feest, Hobby, Repetitie, Sport, Vergader",120,350,693
+491910.878489591,6664394.29179615,100978,0000023682,Dock3,Fusia,"Feest, Hobby, Repetitie, Sport, Vergader",50,100,694
+491910.878489591,6664394.29179615,100979,0000023682,Dock3,Gebouw,"Feest, Hobby, Repetitie, Sport, Vergader",700,2000,695
+490205.653935133,6662771.50409702,100980,0000023258,De Shop,Evenementenhal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",700,3999,696
+490205.653935133,6662771.50409702,100981,0000023258,De Shop,Evenementenhal roze zijde,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",400,2000,697
+490205.653935133,6662771.50409702,100982,0000023258,De Shop,Bar,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",40,400,698
+490205.653935133,6662771.50409702,100983,0000023258,De Shop,Cielo,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",150,400,699
+490205.653935133,6662771.50409702,100984,0000023258,De Shop,Mezzanine,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",50,70,700
+498468.596681441,6657629.84366051,100985,0000013174,Silsburg,Vergaderzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,70,701
+494262.736910857,6659115.06059602,100986,0000008034,De Roma,Zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",550,1800,702
+494262.736910857,6659115.06059602,100987,0000008034,De Roma,Foyer beneden,"Feest, Hobby, Repetitie, Vergader, Vergader1",35,300,703
+494262.736910857,6659115.06059602,100988,0000008034,De Roma,Foyer boven,"Feest, Hobby, Repetitie, Vergader",40,300,704
+492144.725377625,6665296.88182586,100989,0000000492,Sporthal Luchtbal,Annex 1,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",45,50,705
+492144.725377625,6665296.88182586,100990,0000000492,Sporthal Luchtbal,Annex 2,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",45,70,706
+492144.725377625,6665296.88182586,100991,0000000492,Sporthal Luchtbal,Annex 1 + 2,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",45,99,707
+487504.751537357,6655974.51864946,100992,0000000216,Zappa,Grote zaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",650,1000,708
+492154.096947284,6665474.91827635,100993,0000013406,Santiago,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,100,709
+492154.096947284,6665474.91827635,100994,0000013406,Santiago,Veranda,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,50,710
+492154.096947284,6665474.91827635,100995,0000013406,Santiago,Biljartzaal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",50,50,711
+490625.111718309,6659587.54609179,100996,0000000512,Bourla,Foyer,"Feest, Hobby, Repetitie, Vergader, Vergader1",180,300,712
+490625.111718309,6659587.54609179,100997,0000023763,"Toneelhuis, Bourla",Theaterzaal,"Feest, Vergader, Vergader1",940,,713
+492815.877612579,6671104.85947704,100998,0000013574,Blankenberg,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",100,150,714
+486645.01373222,6656947.16895456,100999,0000011142,Petrol Club,Petrol Club - Grote zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",0,750,715
+486645.01373222,6656947.16895456,101000,0000011142,Petrol Club,Petrol Club - Kleine zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",0,199,716
+490521.508985501,6657245.66540499,101001,0000023306,Van Schoonbeke,Eetzaal,"Feest, Hobby, Sport, Vergader, Vergader1",74,120,717
+488669.90508652,6658771.07069148,101002,0000024696,MUHKA,Auditorium,"Feest, Hobby, Repetitie, Vergader, Vergader1",40,80,718
+488669.90508652,6658771.07069148,101003,0000024696,MUHKA,Dakterras,"Feest, Hobby, Repetitie, Vergader, Vergader1",1500,1500,719
+488669.90508652,6658771.07069148,101004,0000024696,MUHKA,Museumzalen,"Feest, Hobby, Repetitie, Vergader, Vergader1",300,800,720
+488669.90508652,6658771.07069148,101005,0000024696,MUHKA,MHKAFE,"Feest, Hobby, Repetitie, Vergader, Vergader1",150,150,721
+479954.769054923,6685041.45735562,101006,0000001452,De Schelde,Foyer,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader",80,256,722
+479954.769054923,6685041.45735562,101007,0000001452,De Schelde,Voorstellingszaal,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader",,204,723
+479954.769054923,6685041.45735562,101008,0000001452,De Schelde,Leskeuken,"Feest, Hobby, Vakantieactiviteit, Vergader1",12,12,724
+479954.769054923,6685041.45735562,101009,0000001452,De Schelde,Vergaderzaal 2a,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",12,20,725
+479954.769054923,6685041.45735562,101010,0000001452,De Schelde,Vergaderzaal 2b,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",12,20,726
+479954.769054923,6685041.45735562,101011,0000001452,De Schelde,Vergaderzaal 2a+b,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",24,40,727
+479954.769054923,6685041.45735562,101012,0000001452,De Schelde,Vergaderzaal 1,"Feest, Hobby, Repetitie, Sport, Vakantieactiviteit, Vergader, Vergader1",12,20,728
+492201.733803359,6660621.55765944,101013,0000003372,Permeke,Auditorium,"Feest, Repetitie, Vergader, Vergader1",,,729
+492201.733803359,6660621.55765944,101014,0000003372,Permeke,Foyer,"Feest, Hobby, Repetitie, Vergader, Vergader1",99,200,730
+492201.733803359,6660621.55765944,101015,0000003372,Permeke,Markt,"Feest, Repetitie, Vergader",,200,731
+492201.733803359,6660621.55765944,101016,0000003372,Permeke,Verdieping,"Feest, Hobby, Repetitie, Vergader",,200,732
+492201.733803359,6660621.55765944,101017,0000003372,Permeke,Panoramazaal,"Feest, Hobby, Repetitie, Vakantieactiviteit, Vergader, Vergader1",28,40,733
+491834.34334658,6660286.47796404,101018,0000023246,Koninklijk Atheneum Antwerpen,Zaal AthenA,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",350,499,734
+491834.34334658,6660286.47796404,101019,0000023246,Koninklijk Atheneum Antwerpen,Turnzaal,"Feest, Hobby, Sport, Vergader, Vergader1",200,300,735
+489892.662119684,6652174.62037097,101020,0000020466,Etion,Inspiro,"Feest, Hobby, Vergader, Vergader1",100,140,736
+496633.669864983,6656364.20816158,101021,0000001434,De Chalet,Polyvalente zaal,"Feest, Sport, Vergader, Vergader1",50,120,737
+490676.01631287,6661658.07334251,101022,0000003945,Sint-Felixpakhuis,Auditorium,"Feest, Repetitie, Vergader, Vergader1",,,738
+490676.01631287,6661658.07334251,101023,0000003945,Sint-Felixpakhuis,Eetzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",64,64,739
+490676.01631287,6661658.07334251,101024,0000003945,Sint-Felixpakhuis,Binnenstraat,"Feest, Hobby, Repetitie, Sport, Vergader",,400,740
+490676.01631287,6661658.07334251,101025,0000003945,Sint-Felixpakhuis,Receptieruimte,"Feest, Hobby, Repetitie, Vergader",,120,741
+490676.01631287,6661658.07334251,101026,0000003945,Sint-Felixpakhuis,Tentoonstellingsruimte,"Feest, Hobby, Repetitie, Vergader",,120,742
+490676.01631287,6661658.07334251,101027,0000003945,Sint-Felixpakhuis,Atrium 1,"Feest, Repetitie, Vergader",,120,743
+490676.01631287,6661658.07334251,101028,0000003945,Sint-Felixpakhuis,Atrium 2,"Feest, Hobby, Repetitie, Vergader",,120,744
+490676.01631287,6661658.07334251,101029,0000003945,Sint-Felixpakhuis,Expeditieruimte,"Feest, Hobby",,120,745
+490676.01631287,6661658.07334251,101030,0000008312,Felixpakhuis BVBA,Salon,"Feest, Hobby, Repetitie, Vergader, Vergader1",,499,746
+490676.01631287,6661658.07334251,101031,0000008312,Felixpakhuis BVBA,Markt,"Feest, Hobby, Repetitie, Vergader, Vergader1",,299,747
+490463.056564823,6659100.23254096,101032,0000014542,Elzenveld,Kanunnik Van Gesselzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",275,500,748
+490463.056564823,6659100.23254096,101033,0000014542,Elzenveld,Onze Lieve Vrouwe Kapel,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",100,250,749
+490463.056564823,6659100.23254096,101034,0000014542,Elzenveld,Dr.Lazarus Marquis Auditorium,"Feest, Repetitie, Vergader, Vergader1",,217,750
+490463.056564823,6659100.23254096,101035,0000014542,Elzenveld,Kloosterzalen,"Feest, Hobby, Repetitie, Vergader, Vergader1",80,150,751
+490463.056564823,6659100.23254096,101036,0000014542,Elzenveld,Directeur Van Laerzaal,"Feest, Repetitie, Vergader, Vergader1",47,68,752
+490463.056564823,6659100.23254096,101037,0000014542,Elzenveld,Zuster Lysbeth Van Wynzaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",30,60,753
+490463.056564823,6659100.23254096,101038,0000014542,Elzenveld,Dr. Leon Desguinzaal,"Feest, Repetitie, Vergader, Vergader1",22,30,754
+490463.056564823,6659100.23254096,101039,0000014542,Elzenveld,Kloosterveranda,"Feest, Repetitie, Vergader, Vergader1",12,12,755
+490463.056564823,6659100.23254096,101040,0000014542,Elzenveld,Dr. Cornelis Broeckxzaal,"Feest, Vergader, Vergader1",16,22,756
+490463.056564823,6659100.23254096,101041,0000014542,Elzenveld,Commisaris Petitzaal,"Feest, Repetitie, Vergader, Vergader1",8,8,757
+490463.056564823,6659100.23254096,101042,0000014542,Elzenveld,Zuster Romana Keuken,"Feest, Repetitie, Vergader, Vergader1",12,12,758
+490463.056564823,6659100.23254096,101043,0000014542,Elzenveld,Hollandse Keuken,"Feest, Vergader, Vergader1",5,5,759
+490463.056564823,6659100.23254096,101044,0000014542,Elzenveld,D'Evorazaal,"Feest, Repetitie, Vergader, Vergader1",64,100,760
+493233.824885491,6657757.00204565,101045,0000021307,De Lijn,Sporthal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader",500,500,761
+496436.616928246,6657921.87816895,101046,0000001429,'t Fortje,Kleine Zaal,Feest,60,120,762
+496436.616928246,6657921.87816895,101047,0000001429,'t Fortje,Grote Zaal,"Feest, Vergader1",135,250,763
+489988.657430363,6662090.9360415,101048,0000007963,Stuurboord,Volledig,"Feest, Hobby, Repetitie, Vergader, Vergader1",850,1500,764
+489988.657430363,6662090.9360415,101049,0000007963,Stuurboord,Zaal Antwerpen,"Feest, Hobby, Repetitie, Vergader, Vergader1",50,200,765
+489988.657430363,6662090.9360415,101050,0000007963,Stuurboord,Zaal Signapore,"Feest, Hobby, Repetitie, Vergader, Vergader1",180,300,766
+489988.657430363,6662090.9360415,101051,0000007963,Stuurboord,Zaal Kaapstad,"Feest, Hobby, Repetitie, Vergader, Vergader1",180,300,767
+489988.657430363,6662090.9360415,101052,0000007963,Stuurboord,Zaal Rio,"Feest, Hobby, Repetitie, Vergader, Vergader1",180,300,768
+489988.657430363,6662090.9360415,101053,0000007963,Stuurboord,Zaal New Orleans,"Feest, Hobby, Repetitie, Vergader, Vergader1",180,300,769
+489988.657430363,6662090.9360415,101054,0000007963,Stuurboord,Zaal Bordeaux,"Feest, Vergader, Vergader1",40,80,770
+490752.41542184,6663134.20532106,101055,0000003549,CadX,Polyvalente Ruimte,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",,500,771
+490752.41542184,6663134.20532106,101056,0000003549,CadX,Beach Volley Indoor,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",,500,772
+490752.41542184,6663134.20532106,101057,0000003549,CadX,Lasershooting,"Feest, Sport, Vergader1",,24,773
+490752.41542184,6663134.20532106,101058,0000003549,CadX,Skybar,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",,70,774
+490752.41542184,6663134.20532106,101059,0000003549,CadX,Beach Volley Outdoor,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",,500,775
+490752.41542184,6663134.20532106,101060,0000003549,CadX,Modulair,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",,500,776
+486743.559823191,6649886.40853984,101061,0000023648,Antarctica IJsstadion,Grote zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",75,75,777
+486743.559823191,6649886.40853984,101062,0000023648,Antarctica IJsstadion,Cafetaria,"Feest, Hobby, Repetitie, Vergader, Vergader1",200,200,778
+495051.969192468,6658071.22757563,101063,0000023234,Vrijgeweide,Cafetaria,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",78,92,779
+490035.740724179,6662736.09934658,101064,0000007958,Waagnatie,Evenementenhal,"Feest, Hobby, Religiebeleving, Repetitie, Sport, Vergader, Vergader1",2000,3800,780
+489685.631503036,6657601.60168864,101065,0000000708,Den Bell Exploitatie,Restaurant,"Feest, Vergader",408,,781
+489685.631503036,6657601.60168864,101066,0000000708,Den Bell Exploitatie,Foyer 0100 - 178p - Vaste beamer,"Feest, Vergader, Vergader1",178,,782
+489685.631503036,6657601.60168864,101067,0000000708,Den Bell Exploitatie,Onthaal,"Feest, Vergader, Vergader1",350,,783
+489950.155707559,6660354.21231188,101068,0000000224,Onze-Lieve-Vrouwekathedraal,Kapelaansacristie,"Feest, Vergader, Vergader1",40,68,784
+489950.155707559,6660354.21231188,101069,0000000224,Onze-Lieve-Vrouwekathedraal,Kerkmeesterskamer,"Feest, Vergader, Vergader1",14,14,785
+489950.155707559,6660354.21231188,101070,0000000224,Onze-Lieve-Vrouwekathedraal,Tuin,"Feest, Vergader, Vergader1",,69,786
+495169.277954566,6660240.71751135,101071,0000001511,Trix,Zaal,"Feest, Hobby, Repetitie, Vergader, Vergader1",400,1100,787
+495169.277954566,6660240.71751135,101072,0000001511,Trix,Bar,"Feest, Repetitie, Vergader",50,180,788
+495169.277954566,6660240.71751135,101073,0000001511,Trix,Club,"Feest, Repetitie, Vergader",150,432,789
+492713.294129618,6662187.80715689,101074,0000009399,Parkloods Noord,Evenementenhal,"Feest, Hobby, Repetitie, Sport, Vergader, Vergader1",2000,2000,790
+490270.90130616,6655468.08538526,101075,0000025751,De Singel,Blauwe zaal,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",946,0,791
+490270.90130616,6655468.08538526,101076,0000025751,De Singel,Muziekstudio,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",168,0,792
+491619.440761301,6664944.64331185,101077,0000009889,Kinepolis,Zaal 01,"Feest, Repetitie, Vergader, Vergader1",,,793
+491619.440761301,6664944.64331185,101078,0000009889,Kinepolis,Zaal 02,"Feest, Repetitie, Vergader, Vergader1",,,794
+491619.440761301,6664944.64331185,101079,0000009889,Kinepolis,Zaal 03,"Feest, Religiebeleving, Repetitie, Vergader, Vergader1",,,795
+491619.440761301,6664944.64331185,101080,0000009889,Kinepolis,Zaal 04,"Feest, Repetitie, Vergader, Vergader1",,,796
+491619.440761301,6664944.64331185,101081,0000009889,Kinepolis,Zaal 05,"Feest, Repetitie, Vergader, Vergader1",,,797
+491619.440761301,6664944.64331185,101082,0000009889,Kinepolis,Zaal 06,"Feest, Repetitie, Vergader, Vergader1",,,798
+491619.440761301,6664944.64331185,101083,0000009889,Kinepolis,Zaal 07,"Feest, Repetitie, Vergader, Vergader1",,,799
+491619.440761301,6664944.64331185,101084,0000009889,Kinepolis,Zaal 08,"Feest, Repetitie, Vergader, Vergader1",,,800
+491619.440761301,6664944.64331185,101085,0000009889,Kinepolis,Zaal 09,"Feest, Repetitie, Vergader, Vergader1",,,801
+491619.440761301,6664944.64331185,101086,0000009889,Kinepolis,Zaal 10,"Feest, Repetitie, Vergader, Vergader1",,,802
+491619.440761301,6664944.64331185,101087,0000009889,Kinepolis,Zaal 11,"Feest, Repetitie, Vergader, Vergader1",,,803
+491619.440761301,6664944.64331185,101088,0000009889,Kinepolis,Zaal 12,"Feest, Repetitie, Vergader, Vergader1",,,804
+491619.440761301,6664944.64331185,101089,0000009889,Kinepolis,Zaal 13,"Feest, Repetitie, Vergader, Vergader1",,,805
+491619.440761301,6664944.64331185,101090,0000009889,Kinepolis,Zaal 14,"Feest, Repetitie, Vergader, Vergader1",,,806
+491619.440761301,6664944.64331185,101091,0000009889,Kinepolis,Zaal 15,"Feest, Repetitie, Vergader, Vergader1",,,807
+491619.440761301,6664944.64331185,101092,0000009889,Kinepolis,Zaal 16,"Feest, Repetitie, Vergader, Vergader1",,,808
+491619.440761301,6664944.64331185,101093,0000009889,Kinepolis,Zaal 17,"Feest, Repetitie, Vergader, Vergader1",,,809
+491619.440761301,6664944.64331185,101094,0000009889,Kinepolis,Zaal 18,"Feest, Repetitie, Vergader, Vergader1",,,810
+491619.440761301,6664944.64331185,101095,0000009889,Kinepolis,Zaal 19,"Feest, Repetitie, Vergader, Vergader1",,,811
+491619.440761301,6664944.64331185,101096,0000009889,Kinepolis,Zaal 20,"Feest, Repetitie, Vergader, Vergader1",,,812
+491619.440761301,6664944.64331185,101097,0000009889,Kinepolis,Zaal 21,"Feest, Repetitie, Vergader, Vergader1",,,813
+491619.440761301,6664944.64331185,101098,0000009889,Kinepolis,Zaal 22,"Feest, Repetitie, Vergader, Vergader1",,,814
+491619.440761301,6664944.64331185,101099,0000009889,Kinepolis,Zaal 23,"Feest, Repetitie, Vergader, Vergader1",,,815
+491619.440761301,6664944.64331185,101100,0000009889,Kinepolis,Zaal 24,"Feest, Repetitie, Vergader, Vergader1",,,816
+491619.440761301,6664944.64331185,101101,0000009889,Kinepolis,Hollywoodzaal,"Feest, Hobby, Religiebeleving, Repetitie, Vergader, Vergader1",1000,1800,817
+491619.440761301,6664944.64331185,101102,0000009889,Kinepolis,Stars Lounge,"Feest, Repetitie, Vergader",120,200,818
+491619.440761301,6664944.64331185,101103,0000009889,Kinepolis,Seminar Center A,"Feest, Repetitie, Vergader, Vergader1",70,100,819
+491619.440761301,6664944.64331185,101104,0000009889,Kinepolis,Seminar Center B,"Feest, Repetitie, Vergader, Vergader1",70,100,820
+491619.440761301,6664944.64331185,101105,0000009889,Kinepolis,Seminar Center A + B,"Feest, Repetitie, Vergader, Vergader1",100,200,821
+492161.2743562,6659434.00063856,101106,0000023253,Ampère,Ampère - Feestzaal,"Feest, Hobby, Religiebeleving, Sport, Vergader, Vergader1",0,960,822

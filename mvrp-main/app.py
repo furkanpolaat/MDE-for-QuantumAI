@@ -21,12 +21,9 @@ from typing import NamedTuple, Union
 from dash import dcc
 from dash import html
 
-
+import time
 import pandas as pd
 import io
-import os
-import base64
-import dash
 import diskcache
 import folium
 from dash import MATCH, DiskcacheManager, callback_context, ctx
@@ -35,6 +32,11 @@ from dash.exceptions import PreventUpdate
 
 from app_configs import APP_TITLE, DEBUG, THEME_COLOR, THEME_COLOR_SECONDARY
 from dash_html import SAMPLER_TYPES, create_table, set_html
+import os
+import base64
+from dash import dcc, html
+from dash.dependencies import Input, Output, State
+import dash
 
 
 from map import (
@@ -86,43 +88,47 @@ with open("assets/theme.css", "w") as f:
 def toggle_upload_section(n_clicks):
     if n_clicks % 2 == 1:
         return {"display": "block"}, "Hide Upload Section"
-    else:
-        return {"display": "none"}, "Show Upload Section"
-# here ıs for the toggle for  csv data addıng code
+    return {"display": "none"}, "Show Upload Section"# here ıs for the toggle for  csv data addıng code
 
 # here ıs for the csv data addıng code
 @app.callback(
-    Output('output-data-upload', 'children'),
+    [Output('output-data-upload', 'children'),
+     Output('file-selector', 'options'),
+     Output('file-selector', 'value')],  # Automatically select the newly uploaded file
     Input('upload-data', 'contents'),
-    State('upload-data', 'filename')
+    State('upload-data', 'filename'),
+    prevent_initial_call=True
 )
 def save_uploaded_file(contents, filename):
     if contents is None:
-        return html.Div("No file uploaded yet!")
+        return html.Div("No file uploaded yet!"), dash.no_update, dash.no_update
 
     # Decode the uploaded content
     content_type, content_string = contents.split(',')
     decoded = base64.b64decode(content_string)
 
-    # Define the relative path to save the file in `assets/CSVs`
-    base_path = os.path.dirname(os.path.abspath(__file__))  # Get the directory of app.py
-    save_path = os.path.join(base_path, 'assets', 'CSVs', filename)  # Save to assets/CSVs
+    # Define save path relative to app root
+    save_path = os.path.join('assets', 'CSVs', filename)
 
     try:
-        # Save the decoded content to the specified path
-        with open(save_path, 'wb') as file:
-            file.write(decoded)
+        # Save file
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        with open(save_path, 'wb') as f:
+            f.write(decoded)
 
-        # Provide success message without calling any processing function
-        return html.Div([
-            html.H5(f"File '{filename}' uploaded successfully!"),
-            html.P(f"Saved to: {save_path}")
-        ])
+        # Update dropdown options and set the newly uploaded file as selected
+        updated_options = [
+            {'label': f, 'value': f} for f in
+            os.listdir(os.path.join('assets', 'CSVs')) if f.endswith('.csv')
+        ]
+
+        return (
+            html.Div([f"File '{filename}' uploaded successfully."]),
+            updated_options,
+            filename  # Automatically select the newly uploaded file
+        )
     except Exception as e:
-        return html.Div([
-            html.H5(f"Error saving file '{filename}':"),
-            html.P(str(e))
-        ])
+        return html.Div([f"Error saving file: {str(e)}"]), dash.no_update, dash.no_update
 
 # here ıs the end for for the data addıng code
 
@@ -133,14 +139,10 @@ def save_uploaded_file(contents, filename):
     Input("settings-button", "n_clicks"),
     prevent_initial_call=True
 )
-def toggle_settings(n_clicks):
+def toggle_settings_section(n_clicks):
     if n_clicks % 2 == 1:
-        # Show settings
         return {"display": "block"}, "Hide Settings"
-    else:
-        # Hide settings
-        return {"display": "none"}, "Show Settings"
-
+    return {"display": "none"}, "Show Settings"
 # here ıs the end for the toggle
 
 @app.callback(
@@ -490,6 +492,7 @@ def run_optimization(
         num_locations=num_clients,
         vehicles_deployed=num_vehicles,
     )
+
 
 
 def _get_parameter_hash(**states) -> str:
