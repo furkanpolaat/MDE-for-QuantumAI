@@ -46,11 +46,11 @@ THUMBNAIL = "assets/a-logo.svg"
 APP_TITLE = "QauntumTraffic"
 MAIN_HEADER = " Routing Calculation with Quantum Computing (City of Antwerp Demo)"
 DESCRIPTION = """\
-This demo showcases a MVRP applied to optimizing routes using open data from the City of Antwerp. Users can upload their datasets directly through the platform and select from various solver types, including classical and quantum hybrid algorithms, to compare their efficiency in solving real-world logistics challenges. The demo also allows users to customize settings, enabling them to adjust parameters and tailor the optimization process to their specific requirements."""
+This demo is to optimize routes for the data points from open data of the City of Antwerp. Users can upload their datasets directly through the platform and select from various solver types, including classical and quantum hybrid algorithms.the result section allows the comparisation of the alghoritms efficiency in solving real-world logistics challenges. The demo also allows users to customize settings, enabling them to adjust parameters and tailor the optimization process to their specific requirements."""
 
 DEPOT_LABEL = "Depot"  # Either "Depot" or specific start location
 LOCATIONS_LABEL = "Locations"  # Either "Locations" or business specific location type
-RESOURCES = ["Water", "Food", "Other"]  # Supports any number of resources
+RESOURCES = ["R1", "R2", "R3"]  # Supports any number of resources
 
 SHOW_DQM = False  # Show/hide DQM drop down option
 
