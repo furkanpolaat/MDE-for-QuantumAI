@@ -122,8 +122,11 @@ class Solver:
         }
 
         # Convert client lat/lon to nearest nodes
+        # In solver.py, update the generate method or wherever you process client_subset
+        # Convert client lat/lon to nearest nodes
         clients = {}
-        for lat, lon in self.client_subset:
+        for client in self.client_subset:
+            lat, lon = client[:2]  # Unpack only the first two values (Latitude and Longitude)
             nearest_node = ox.distance.nearest_nodes(self.map_network, lon, lat)
             clients[nearest_node] = (
                 self.map_network.nodes[nearest_node]["y"],

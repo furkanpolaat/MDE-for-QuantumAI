@@ -120,9 +120,7 @@ def agenerate_mapping_information(file_path: str, bb_distance: int, num_clients:
 
     return map_network, depot_node, client_subset, map_bounds
 
-
-def generate_mapping_information(file_path: str, bb_distance: int, num_clients: int) -> tuple[
-    nx.MultiDiGraph, int, list, list]:
+def generate_mapping_information(file_path: str, bb_distance: int, num_clients: int) -> tuple[nx.MultiDiGraph, int, list, list]:
     """
     Generates a map network with a bounding box based on user-defined distance.
 
@@ -132,12 +130,18 @@ def generate_mapping_information(file_path: str, bb_distance: int, num_clients: 
         num_clients (int): Number of locations to be visited.
 
     Returns:
-        tuple: Contains map network, depot ID, client subset, and map bounds.
+        tuple: Contains map network, depot ID, client subset (with extra data), and map bounds.
     """
-    print(f"Generating map with bounding box distance: {bb_distance} meters")  # Debugging info
-
-    # Load glass container locations from CSV
+    # Load client locations
     client_csv_file_df = pd.read_csv(file_path)
+
+    # Dynamically select 3rd and 4th columns as 'Object ID' and 'Name'
+    object_id_col = client_csv_file_df.iloc[:, 2]
+    name_col = client_csv_file_df.iloc[:, 3]
+
+    # Add Latitude and Longitude columns
+    client_csv_file_df['Latitude'] = None
+    client_csv_file_df['Longitude'] = None
 
     # Initialize transformer (from EPSG:3857 to EPSG:4326 for lat/long)
     transformer = pyproj.Transformer.from_crs("EPSG:3857", "EPSG:4326", always_xy=True)
@@ -147,10 +151,6 @@ def generate_mapping_information(file_path: str, bb_distance: int, num_clients: 
         lon, lat = transformer.transform(x, y)
         return lat, lon
 
-    # Add Latitude and Longitude columns
-    client_csv_file_df['Latitude'] = None
-    client_csv_file_df['Longitude'] = None
-
     for i in range(len(client_csv_file_df)):
         x = client_csv_file_df.loc[i, 'X']
         y = client_csv_file_df.loc[i, 'Y']
@@ -158,8 +158,13 @@ def generate_mapping_information(file_path: str, bb_distance: int, num_clients: 
         client_csv_file_df.at[i, 'Latitude'] = lat
         client_csv_file_df.at[i, 'Longitude'] = lon
 
-    # Use transformed coordinates for client data
-    transformed_client_csv_file = client_csv_file_df[['Latitude', 'Longitude']]
+    # Select necessary data and append Object ID and Name
+    transformed_client_csv_file = client_csv_file_df[['Latitude', 'Longitude']].head(num_clients)
+    client_subset = transformed_client_csv_file.values.tolist()
+
+    for i, row in enumerate(client_subset):
+        row.append(object_id_col.iloc[i])  # Append Object ID
+        row.append(name_col.iloc[i])       # Append Name
 
     # Generate the graph based on bounding box distance
     G = ox.graph_from_point(
@@ -168,7 +173,6 @@ def generate_mapping_information(file_path: str, bb_distance: int, num_clients: 
         network_type="drive",
         truncate_by_edge=True
     )
-    print(f"Graph generated with {len(G.nodes)} nodes and {len(G.edges)} edges.")  # Debugging info
 
     # Get the largest connected component (for consistency)
     map_network = ox.truncate.largest_component(G, strongly=True)
@@ -176,13 +180,12 @@ def generate_mapping_information(file_path: str, bb_distance: int, num_clients: 
     # Find nearest node to depot
     depot_node = ox.distance.nearest_nodes(map_network, DEPOT_LON, DEPOT_LAT)
 
-    # Select clients based on transformed coordinates
-    client_subset = transformed_client_csv_file.values.tolist()[:num_clients]
-
     # Add demands and resources to nearest nodes of clients
-    for lat, lon in client_subset:
+    for lat, lon, obj_id, name in client_subset:
         nearest_node = ox.distance.nearest_nodes(map_network, lon, lat)
         map_network.nodes[nearest_node]["demand"] = 0
+        map_network.nodes[nearest_node]["Object ID"] = obj_id
+        map_network.nodes[nearest_node]["Name"] = name
 
         # Assign default resource values
         for i in range(len(RESOURCES)):
@@ -195,7 +198,6 @@ def generate_mapping_information(file_path: str, bb_distance: int, num_clients: 
 
     return map_network, depot_node, client_subset, map_bounds
 
-
 def _get_node_info(
     G: nx.Graph, node_id: int, icon_name: str
 ) -> tuple[folium.CustomIcon, list[int]]:
@@ -203,7 +205,6 @@ def _get_node_info(
     icon_path = Path(__file__).parent / f"assets/location_icons/{icon_name}.png"
     location_icon = folium.CustomIcon(str(icon_path), icon_size=(30, 48))
     return location_icon, [G.nodes[node_id][f"resource_{i}"] * 100 for i in range(len(RESOURCES))]
-
 
 def show_locations_on_initial_map(
     G: nx.MultiDiGraph, depot_id: int, client_subset: list, map_bounds: list[list]
@@ -213,12 +214,12 @@ def show_locations_on_initial_map(
     Args:
         G: ``nx.MultiDiGraph`` to build map from.
         depot_id: Node ID of the depot location.
-        client_subset: List of client latitude and longitude pairs.
+        client_subset: List of client latitude and longitude pairs with extra data.
 
     Returns:
         folium.Map: Map with depot, client locations, and tooltip popups.
     """
-    # create folium map on which to plot depots
+    # Create folium map on which to plot depots
     tiles = "cartodb positron"  # folium map theme
 
     folium_map = ox.graph_to_gdfs(G, nodes=False, node_geometry=False).explore(
@@ -228,15 +229,15 @@ def show_locations_on_initial_map(
 
     folium_map.fit_bounds(map_bounds)
 
-    # add marker to the depot location
+    # Add marker to the depot location
     folium.Marker(
         location=(G.nodes[depot_id]["y"], G.nodes[depot_id]["x"]),
         tooltip=folium.map.Tooltip(text=DEPOT_LABEL, style="font-size: 1.4rem;"),
         icon=depot_icon,
     ).add_to(folium_map)
 
-    # convert each client latitude/longitude to nearest graph node and add markers
-    for lat, lon in client_subset:
+    # Convert each client latitude/longitude to nearest graph node and add markers
+    for lat, lon, obj_id, name in client_subset:
         nearest_node = ox.distance.nearest_nodes(G, lon, lat)
         location_icon, nodes = _get_node_info(G, nearest_node, "location_orange")
 
@@ -245,13 +246,14 @@ def show_locations_on_initial_map(
             tooltip=folium.map.Tooltip(
                 text=" <br> ".join(
                     [f"{resource}: {nodes[index]}" for index, resource in enumerate(RESOURCES)]
-                ),
+                )
+                + f"<br>Object ID: {obj_id}<br>Name: {name}",  # Add Object ID and Name
                 style="font-size: 1.4rem;",
             ),
             icon=location_icon,
         ).add_to(folium_map)
 
-    # add fullscreen button to map
+    # Add fullscreen button to map
     plugins.Fullscreen().add_to(folium_map)
     return folium_map
 
