@@ -59,56 +59,43 @@ def description_card():
 
 
 def set_html(app):
-    """Set the application HTML."""
+    """Set the application HTML with the control panel on top."""
     app.layout = html.Div(
         id="app-container",
         children=[
-            # below are any temporary storage items, e.g., for sharing data between callbacks
-            dcc.Store(id="stored-results"),  # temporarily stored results table
-            dcc.Store(id="sampler-type"),  # solver type used for latest run
-            dcc.Store(
-                id="reset-results"
-            ),  # whether to reset the results tables before displaying the latest run
-            dcc.Store(
-                id="run-in-progress", data=False
-            ),  # callback blocker to signal that the run is complete
-            dcc.Store(id="parameter-hash"),  # hash string to detect changed parameters
-            dcc.Store(id="cost-comparison"),  # dictionary with solver keys and run values
+            # Temporary storage items for sharing data between callbacks
+            dcc.Store(id="stored-results"),  # Temporarily stored results table
+            dcc.Store(id="sampler-type"),  # Solver type used for the latest run
+            dcc.Store(id="reset-results"),  # Reset the results tables before displaying the latest run
+            dcc.Store(id="run-in-progress", data=False),  # Callback blocker to signal run completion
+            dcc.Store(id="parameter-hash"),  # Hash string to detect changed parameters
+            dcc.Store(id="cost-comparison"),  # Dictionary with solver keys and run values
+
             # Banner
             html.Div(id="banner", children=[html.Img(src=THUMBNAIL)]),
+
+            # Top control panel
+            html.Div(
+                id="top-control-panel",
+                className="top-control-panel",
+                children=[
+                    description_card(),
+                    generate_control_card(),
+                ],
+                style={
+                    "width": "100%",
+                    "padding": "10px 20px",
+                    "background-color": "#f9f9f9",
+                    "border-bottom": "1px solid #ddd",
+                    "box-shadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+                    "margin-bottom": "20px",
+                },
+            ),
+
+            # Main content: Map and Results Tabs
             html.Div(
                 id="columns",
                 children=[
-                    # Left column
-                    html.Div(
-                        id={"type": "to-collapse-class", "index": 0},
-                        className="left-column",
-                        children=[
-                            html.Div(
-                                [  # Fixed width Div to collapse
-                                    html.Div(
-                                        [  # Padding and content wrapper
-                                            description_card(),
-                                            generate_control_card(),
-                                            html.Div(
-                                                ["initial child"],
-                                                id="output-clientside",
-                                                style={"display": "none"},
-                                            ),
-                                        ]
-                                    )
-                                ]
-                            ),
-                            html.Div(
-                                html.Button(
-                                    id={"type": "collapse-trigger", "index": 0},
-                                    className="left-column-collapse",
-                                    children=[html.Div(className="collapse-arrow")],
-                                ),
-                            ),
-                        ],
-                    ),
-                    # Right column
                     html.Div(
                         id="right-column",
                         children=[
@@ -120,14 +107,16 @@ def set_html(app):
                                     dcc.Tab(
                                         label="Map",
                                         id="map-tab",
-                                        value="map-tab",  # used for switching to programatically
+                                        value="map-tab",  # Used for programmatic switching
                                         className="tab",
                                         children=[
                                             dcc.Loading(
                                                 id="loading",
                                                 type="circle",
                                                 color=THEME_COLOR_SECONDARY,
-                                                children=html.Iframe(id="solution-map"),
+                                                children=html.Iframe(
+                                                    id="solution-map", style={"width": "100%", "height": "600px"}
+                                                ),
                                             ),
                                         ],
                                     ),
@@ -152,16 +141,14 @@ def set_html(app):
                                                                             html.H3(
                                                                                 className="table-label",
                                                                                 children=[
-                                                                                    html.Span(
-                                                                                        id="hybrid-table-label"
-                                                                                    ),
+                                                                                    html.Span(id="hybrid-table-label"),
                                                                                     " Results",
                                                                                 ],
                                                                             ),
                                                                             html.Div(
                                                                                 title="Quantum Hybrid",
                                                                                 id="solution-cost-table",
-                                                                                children=[],  # add children dynamically using 'create_table' below
+                                                                                children=[],  # Add dynamically using `create_table`
                                                                             ),
                                                                         ],
                                                                     ),
@@ -170,15 +157,13 @@ def set_html(app):
                                                                         className="result-table-div",
                                                                         children=[
                                                                             html.H3(
-                                                                                children=[
-                                                                                    "Classical (K-Means) Results"
-                                                                                ],
+                                                                                children=["Classical (K-Means) Results"],
                                                                                 className="table-label",
                                                                             ),
                                                                             html.Div(
                                                                                 title="Classical (K-Means)",
                                                                                 id="solution-cost-table-classical",
-                                                                                children=[],  # add children dynamically using 'create_table' below
+                                                                                children=[],  # Add dynamically using `create_table`
                                                                             ),
                                                                         ],
                                                                     ),
@@ -187,9 +172,7 @@ def set_html(app):
                                                             html.H4(
                                                                 id="performance-improvement-quantum",
                                                                 className=(
-                                                                    ""
-                                                                    if SHOW_COST_COMPARISON
-                                                                    else "display-none"
+                                                                    "" if SHOW_COST_COMPARISON else "display-none"
                                                                 ),
                                                             ),
                                                         ]
@@ -198,25 +181,15 @@ def set_html(app):
                                                         [
                                                             html.Hr(),
                                                             html.Div(
-                                                                id={
-                                                                    "type": "to-collapse-class",
-                                                                    "index": 1,
-                                                                },
+                                                                id={"type": "to-collapse-class", "index": 1},
                                                                 className="details-collapse-wrapper collapsed",
                                                                 children=[
                                                                     html.Button(
-                                                                        id={
-                                                                            "type": "collapse-trigger",
-                                                                            "index": 1,
-                                                                        },
+                                                                        id={"type": "collapse-trigger", "index": 1},
                                                                         className="details-collapse",
                                                                         children=[
-                                                                            html.H5(
-                                                                                "Problem Details"
-                                                                            ),
-                                                                            html.Div(
-                                                                                className="collapse-arrow"
-                                                                            ),
+                                                                            html.H5("Problem Details"),
+                                                                            html.Div(className="collapse-arrow"),
                                                                         ],
                                                                     ),
                                                                     html.Div(
@@ -272,9 +245,7 @@ def set_html(app):
                                                                                                     html.Td(
                                                                                                         id="vehicles-deployed"
                                                                                                     ),
-                                                                                                    html.Td(
-                                                                                                        "Classical"
-                                                                                                    ),
+                                                                                                    html.Td("Classical"),
                                                                                                     html.Td(
                                                                                                         id="wall-clock-time-classical"
                                                                                                     ),
@@ -285,9 +256,7 @@ def set_html(app):
                                                                                                     html.Td(
                                                                                                         "Problem Size"
                                                                                                     ),
-                                                                                                    html.Td(
-                                                                                                        id="problem-size"
-                                                                                                    ),
+                                                                                                    html.Td(id="problem-size"),
                                                                                                 ]
                                                                                             ),
                                                                                             html.Tr(
@@ -295,9 +264,7 @@ def set_html(app):
                                                                                                     html.Td(
                                                                                                         "Search Space"
                                                                                                     ),
-                                                                                                    html.Td(
-                                                                                                        id="search-space"
-                                                                                                    ),
+                                                                                                    html.Td(id="search-space"),
                                                                                                 ]
                                                                                             ),
                                                                                         ],
